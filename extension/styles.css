@@ -1,0 +1,144 @@
+#shadowshield-warning {
+    position: fixed;
+    inset: 0;
+
+    z-index: 2147483647;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+.shadowshield-card {
+
+    width: 460px;
+
+    max-width: 90vw;
+
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 24px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.35);
+
+    color: #111827;
+}
+
+
+.shadowshield-title {
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+
+.shadowshield-message {
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin-bottom: 14px;
+}
+
+
+.shadowshield-risk {
+
+    padding: 10px 12px;
+
+    border-radius: 8px;
+
+    background: #fef3c7;
+
+    margin-bottom: 12px;
+
+    font-size: 14px;
+}
+
+
+.shadowshield-detections {
+
+    margin-bottom: 16px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+.shadowshield-preview {
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+}
+
+
+.shadowshield-text {
+
+    margin-top: 8px;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    background: #f3f4f6;
+
+    word-break: break-word;
+
+    line-height: 1.5;
+}
+
+
+.shadowshield-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.shadowshield-buttons button {
+
+    padding: 9px 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    background: #e5e7eb;
+}
+
+
+.shadowshield-buttons button:hover {
+
+    opacity: 0.85;
+}
+
+
+.shadowshield-primary {
+
+    background: #111827 !important;
+
+    color: white;
+}
