@@ -1,0 +1,1001 @@
+text,label,category,subcategory,source_type,contains_sensitive
+Can you help organize the private deployment settings? Can you help me document it?,sensitive,organizational,private_configuration,synthetic,True
+Can you teach me deadlocks with an example while learning software development.,safe,safe,none,synthetic,False
+How can I practice object oriented programming effectively in a prototype.,safe,safe,none,synthetic,False
+The demo user's mobile number is 8899776655. Can you help me format this?,sensitive,pii,phone,synthetic,True
+Can you debug my Flask application? My API key is test_key_X92K71.,sensitive,mixed,api_key,synthetic,True
+What are the important concepts behind computer architecture in a local test environment.,safe,safe,none,synthetic,False
+How would I implement hash tables in Python?,safe,safe,none,synthetic,False
+The card field contains the following number: 6011111111111117. This is synthetic test data.,sensitive,financial,card,synthetic,True
+The access token for my test application is demoAuthToken8392. This is part of a development test.,sensitive,credential,access_token,synthetic,True
+Can you improve this customer-management application? The customer email is demo.account@example.com. This is for a test project.,sensitive,mixed,email,synthetic,True
+Explain the time complexity associated with HTTP requests.,safe,safe,none,synthetic,False
+Can you verify the formatting of this card number: 4012888888881881? This is for a test application.,sensitive,financial,card,synthetic,True
+How does binary trees work for an academic project.,safe,safe,none,synthetic,False
+How would I implement CSS Flexbox in Python?,safe,safe,none,synthetic,False
+Can you explain FastAPI step by step?,safe,safe,none,synthetic,False
+What should a beginner know about web development for an academic project.,safe,safe,none,synthetic,False
+Can you give me a practical example of REST architecture in a sample project.,safe,safe,none,synthetic,False
+Please check this payment processing code using card number 4012888888881881. Can you explain what is wrong?,sensitive,mixed,card,synthetic,True
+Help me prepare for an interview about web development.,safe,safe,none,synthetic,False
+The card field contains the following number: 4000000000000002.,sensitive,financial,card,synthetic,True
+Give me some interview questions about web development for a programming assignment.,safe,safe,none,synthetic,False
+Can you teach me object oriented programming with an example in a local test environment.,safe,safe,none,synthetic,False
+Can you give me a practical example of Python programming in a demo application.,safe,safe,none,synthetic,False
+Can you provide a practice problem involving computer networks while learning software development.,safe,safe,none,synthetic,False
+The application contains financial identifier 123456789012.,sensitive,financial,account,synthetic,True
+What should a beginner know about object oriented programming in a prototype.,safe,safe,none,synthetic,False
+Give me some interview questions about Git and GitHub in a demo application.,safe,safe,none,synthetic,False
+Can you troubleshoot the internal server at 10.20.30.15? This is part of a test environment.,sensitive,organizational,internal_server,synthetic,True
+Help me prepare for an interview about linear regression.,safe,safe,none,synthetic,False
+How can I practice neural networks effectively for an academic project.,safe,safe,none,synthetic,False
+What are common mistakes when learning hash tables?,safe,safe,none,synthetic,False
+Can you improve this REST API? The access token is demo_token_83A91X. Please suggest a solution.,sensitive,mixed,access_token,synthetic,True
+How would I implement Python programming in Python in a sample project.,safe,safe,none,synthetic,False
+Help me debug this employee management system. Employee ID: STAFF-DEMO-3812.,sensitive,mixed,employee_id,synthetic,True
+Please debug my PostgreSQL connection. The database credential is mongodb://demo:DemoPass92@localhost:27017/testdb. Please suggest a solution.,sensitive,mixed,database_credential,synthetic,True
+Please review these database credentials: postgresql://demo_user:DemoPass482!@localhost:5432/testdb. Can you explain what is wrong?,sensitive,credential,database_credential,synthetic,True
+Please review this application configuration containing API_KEY=sample-key-73921. Please review the code.,sensitive,mixed,api_key,synthetic,True
+Can you prepare internal documentation for this confidential project? Can you help me document it?,sensitive,organizational,confidential_information,synthetic,True
+Please check the payment form containing 4000000000000002. This is synthetic test data.,sensitive,financial,card,synthetic,True
+What should a beginner know about data preprocessing?,safe,safe,none,synthetic,False
+How would I implement computer networks in Python in a sample project.,safe,safe,none,synthetic,False
+Please review these database credentials: mysql://test_user:MockPass731@localhost:3306/sampledb. This is part of a development test.,sensitive,credential,database_credential,synthetic,True
+"The user's address is 28 Test Road, Ahmedabad.",sensitive,pii,address,synthetic,True
+This is the user's contact number: 9000012345.,sensitive,pii,phone,synthetic,True
+Can you improve this payment application? The test card number is 4000000000000002. Can you explain what is wrong?,sensitive,mixed,card,synthetic,True
+What are common mistakes when learning operating systems for a college project.,safe,safe,none,synthetic,False
+Can you provide notes about database indexing for my test application.,safe,safe,none,synthetic,False
+Please include employee identifier EMP-SAMPLE-3519 in the internal report.,sensitive,organizational,employee_id,synthetic,True
+How is Linux commands used in software development for my development environment.,safe,safe,none,synthetic,False
+How would I implement REST architecture in C++ in a prototype.,safe,safe,none,synthetic,False
+The application uses this API key: test_key_X92K71. Can you explain what is wrong?,sensitive,credential,api_key,synthetic,True
+What are the important concepts behind web development?,safe,safe,none,synthetic,False
+What are the important concepts behind CSS Flexbox for my test application.,safe,safe,none,synthetic,False
+How would I implement classification algorithms in Python while learning software development.,safe,safe,none,synthetic,False
+Show me a simple example of classification algorithms for my development environment.,safe,safe,none,synthetic,False
+Can you give me a practical example of binary search?,safe,safe,none,synthetic,False
+The card field contains the following number: 6011111111111117. Can you help me process this?,sensitive,financial,card,synthetic,True
+Please validate this account number: 456789123456. Can you validate the format?,sensitive,financial,account,synthetic,True
+"The customer lives at 91 Mock Colony, Mumbai.",sensitive,pii,address,synthetic,True
+The application contains financial identifier 234567890123. This is synthetic test data.,sensitive,financial,account,synthetic,True
+Please check the payment form containing 6011111111111117. Can you validate the format?,sensitive,financial,card,synthetic,True
+My phone number is 9345678123.,sensitive,pii,phone,synthetic,True
+"The user's address is 31 Demo Lane, Kochi.",sensitive,pii,address,synthetic,True
+How can I practice data structures effectively for my test application.,safe,safe,none,synthetic,False
+Please check the database configuration mysql://test_user:MockPass731@localhost:3306/sampledb. This is from my local environment.,sensitive,credential,database_credential,synthetic,True
+The test application's password is DemoSecure44!.,sensitive,credential,password,synthetic,True
+How would I implement version control in C++ while learning software development.,safe,safe,none,synthetic,False
+This confidential company project is called Project Aurora. This is part of a test environment.,sensitive,organizational,confidential_information,synthetic,True
+The application uses ExamplePass321! as its test password.,sensitive,credential,password,synthetic,True
+How would I implement Django in C++ while learning software development.,safe,safe,none,synthetic,False
+How can I practice database indexing effectively?,safe,safe,none,synthetic,False
+How would I implement support vector machines in Python?,safe,safe,none,synthetic,False
+What are common mistakes when learning data preprocessing in a prototype.,safe,safe,none,synthetic,False
+What are the real-world applications of computer architecture in a demo application.,safe,safe,none,synthetic,False
+Show me a simple example of hash tables for a college project.,safe,safe,none,synthetic,False
+My email address is mock.user@example.com.,sensitive,pii,email,synthetic,True
+The customer can be contacted at demo.contact@example.org. Please check the format.,sensitive,pii,email,synthetic,True
+Explain neural networks in simple terms.,safe,safe,none,synthetic,False
+Give me some interview questions about React in a sample project.,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of database normalization?,safe,safe,none,synthetic,False
+What are the important concepts behind FastAPI for an academic project.,safe,safe,none,synthetic,False
+The banking form contains this account number: 112233445566.,sensitive,financial,account,synthetic,True
+Can you validate this test payment card: 4000000000000002?,sensitive,financial,card,synthetic,True
+"Can you validate this address: 31 Demo Lane, Kochi? Can you help me format this?",sensitive,pii,address,synthetic,True
+Please check this payment processing code using card number 5555555555554444.,sensitive,mixed,card,synthetic,True
+Give me a coding example related to operating systems while learning software development.,safe,safe,none,synthetic,False
+Please validate this account number: 345678901234.,sensitive,financial,account,synthetic,True
+Explain the time complexity associated with Python programming.,safe,safe,none,synthetic,False
+Please check this card number: 3530111333300000.,sensitive,financial,card,synthetic,True
+Can you troubleshoot this internal infrastructure?,sensitive,organizational,internal_server,synthetic,True
+Please fix this contact form. The user's phone number is 9988776655. Can you explain what is wrong?,sensitive,mixed,phone,synthetic,True
+How does recursion work for my test application.,safe,safe,none,synthetic,False
+Why does login fail with password DemoPass482!? This is from my local environment.,sensitive,credential,password,synthetic,True
+Please debug my PostgreSQL connection. The database credential is mongodb://test:ExamplePass321!@localhost:27017/demo. Can you help me troubleshoot this?,sensitive,mixed,database_credential,synthetic,True
+Please check this payment processing code using card number 4012888888881881. Please suggest a solution.,sensitive,mixed,card,synthetic,True
+The test service uses the following API key: test-api-token-48291. This is from my local environment.,sensitive,credential,api_key,synthetic,True
+"Please use this address in the delivery form: 12 Training Road, Coimbatore.",sensitive,pii,address,synthetic,True
+I need to document these internal configuration values. Please explain the configuration.,sensitive,organizational,private_configuration,synthetic,True
+The test application's password is MockPassword55!. Please identify the issue.,sensitive,credential,password,synthetic,True
+What are the advantages and disadvantages of binary trees?,safe,safe,none,synthetic,False
+Please organize the confidential project details. Please explain the configuration.,sensitive,organizational,confidential_information,synthetic,True
+How can I practice computer networks effectively in a sample project.,safe,safe,none,synthetic,False
+Please help me redact this card number: 3530111333300000. Can you validate the format?,sensitive,financial,card,synthetic,True
+Can you teach me SQL joins with an example in a prototype.,safe,safe,none,synthetic,False
+The card field contains the following number: 4111111111111111.,sensitive,financial,card,synthetic,True
+What are common mistakes when learning REST APIs for my development environment.,safe,safe,none,synthetic,False
+What are the real-world applications of process scheduling for my development environment.,safe,safe,none,synthetic,False
+What should a beginner know about responsive web design for my development environment.,safe,safe,none,synthetic,False
+Explain the time complexity associated with Django in a local test environment.,safe,safe,none,synthetic,False
+Please help me protect this financial identifier: 123456789012. This is synthetic test data.,sensitive,financial,account,synthetic,True
+Can you inspect the following token: demo_token_83A91X? Can you help me debug the problem?,sensitive,credential,access_token,synthetic,True
+What are the real-world applications of Docker for my test application.,safe,safe,none,synthetic,False
+Can you explain REST architecture step by step in a local test environment.,safe,safe,none,synthetic,False
+Can you improve this REST API? The access token is test_access_token_7291. Please review the code.,sensitive,mixed,access_token,synthetic,True
+Show me a simple example of Python programming in a prototype.,safe,safe,none,synthetic,False
+Can you check the employee record associated with EMP-TEST-2048?,sensitive,organizational,employee_id,synthetic,True
+Can you explain dynamic programming step by step in a sample project.,safe,safe,none,synthetic,False
+How does process scheduling work for my development environment.,safe,safe,none,synthetic,False
+Give me some interview questions about Docker.,safe,safe,none,synthetic,False
+Show me a simple example of software testing.,safe,safe,none,synthetic,False
+Please help me protect this financial identifier: 987654321098.,sensitive,financial,account,synthetic,True
+The development server is 10.10.20.25.,sensitive,organizational,internal_server,synthetic,True
+Please validate employee ID STAFF-DEMO-3812 in this test record.,sensitive,organizational,employee_id,synthetic,True
+Can you debug my Flask application? My API key is demo-api-key-83921. Can you help me identify the issue?,sensitive,mixed,api_key,synthetic,True
+Please check this payment processing code using card number 4000000000000002.,sensitive,mixed,card,synthetic,True
+Can you explain object oriented programming step by step in a prototype.,safe,safe,none,synthetic,False
+What are the real-world applications of Dijkstra's algorithm while learning software development.,safe,safe,none,synthetic,False
+Please review this internal server configuration.,sensitive,organizational,internal_server,synthetic,True
+The application contains financial identifier 345678901234. Can you help me process this?,sensitive,financial,account,synthetic,True
+Give me a beginner-friendly explanation of software testing in a demo application.,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of SQL joins in a demo application.,safe,safe,none,synthetic,False
+This is the user's contact number: 8765432109.,sensitive,pii,phone,synthetic,True
+Can you teach me deadlocks with an example in a demo application.,safe,safe,none,synthetic,False
+Please debug my PostgreSQL connection. The database credential is postgresql://demo_user:DemoPass482!@localhost:5432/testdb.,sensitive,mixed,database_credential,synthetic,True
+Give me some interview questions about decision trees in a prototype.,safe,safe,none,synthetic,False
+Give me some interview questions about virtual memory.,safe,safe,none,synthetic,False
+The test application's password is TestPassword731!.,sensitive,credential,password,synthetic,True
+My test card number is 4012888888881881. This is synthetic test data.,sensitive,financial,card,synthetic,True
+Can you debug authentication using this password: ExamplePass321!?,sensitive,credential,password,synthetic,True
+What are the important concepts behind version control in a demo application.,safe,safe,none,synthetic,False
+Explain the time complexity associated with recursion while learning software development.,safe,safe,none,synthetic,False
+Can you give me a practical example of machine learning?,safe,safe,none,synthetic,False
+What are common mistakes when learning Python programming for a college project.,safe,safe,none,synthetic,False
+Can you improve this REST API? The access token is sample_token_X72K.,sensitive,mixed,access_token,synthetic,True
+What are the real-world applications of binary search?,safe,safe,none,synthetic,False
+Please validate this account number: 987654321098. Please explain how to protect it.,sensitive,financial,account,synthetic,True
+Can you provide a practice problem involving SQL joins for a programming assignment.,safe,safe,none,synthetic,False
+Please check the authentication configuration containing MockLogin92#. This is from my local environment.,sensitive,credential,password,synthetic,True
+Can you format this confidential project information for internal documentation? Please explain the configuration.,sensitive,organizational,confidential_information,synthetic,True
+How is REST architecture used in software development in a prototype.,safe,safe,none,synthetic,False
+How would I implement time complexity in C++?,safe,safe,none,synthetic,False
+Help me prepare for an interview about hash tables while learning software development.,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of Java programming in a demo application.,safe,safe,none,synthetic,False
+Please fix this contact form. The user's phone number is 9345678123. Can you help me identify the issue?,sensitive,mixed,phone,synthetic,True
+Can you check the private configuration used by our test system?,sensitive,organizational,private_configuration,synthetic,True
+Can you summarize the key concepts of JavaScript while learning software development.,safe,safe,none,synthetic,False
+What are the real-world applications of Floyd Warshall algorithm for an academic project.,safe,safe,none,synthetic,False
+This confidential company project is called Project Aurora. Can you help me document it?,sensitive,organizational,confidential_information,synthetic,True
+Please fix this contact form. The user's phone number is 9876501234. This is from a development environment.,sensitive,mixed,phone,synthetic,True
+Show me a simple example of page replacement algorithms.,safe,safe,none,synthetic,False
+"The customer lives at 31 Demo Lane, Kochi. This is for a test application.",sensitive,pii,address,synthetic,True
+Can you analyze this login configuration? PASSWORD=MockLogin92#. Can you help me identify the issue?,sensitive,mixed,password,synthetic,True
+Explain the time complexity associated with virtual memory.,safe,safe,none,synthetic,False
+What are the important concepts behind Kruskal's algorithm?,safe,safe,none,synthetic,False
+Please help document this internal application configuration.,sensitive,organizational,private_configuration,synthetic,True
+Give me a beginner-friendly explanation of responsive web design in a prototype.,safe,safe,none,synthetic,False
+Show me a simple example of Floyd Warshall algorithm.,safe,safe,none,synthetic,False
+The demo payment system uses card number 4111111111111111.,sensitive,financial,card,synthetic,True
+What are the real-world applications of SQL joins while learning software development.,safe,safe,none,synthetic,False
+Can you troubleshoot the internal server at 10.20.30.15? Please keep this information private.,sensitive,organizational,internal_server,synthetic,True
+Help me prepare for an interview about version control.,safe,safe,none,synthetic,False
+Can you compare web development with a related concept?,safe,safe,none,synthetic,False
+Can you teach me virtual memory with an example for a programming assignment.,safe,safe,none,synthetic,False
+Can you improve this customer-management application? The customer email is sample.person@example.net. Can you help me troubleshoot this?,sensitive,mixed,email,synthetic,True
+Give me a beginner-friendly explanation of classification algorithms.,safe,safe,none,synthetic,False
+Why does login fail with password DemoPass482!?,sensitive,credential,password,synthetic,True
+Can you give me a practical example of cloud computing for my test application.,safe,safe,none,synthetic,False
+Please review this database connection string: postgresql://demo_user:DemoPass482!@localhost:5432/testdb. This is from my local environment.,sensitive,credential,database_credential,synthetic,True
+Please check this card number: 378282246310005. Can you help me process this?,sensitive,financial,card,synthetic,True
+Can you inspect the following token: demoAuthToken8392? Can you explain what is wrong?,sensitive,credential,access_token,synthetic,True
+Can you provide notes about dynamic programming in a local test environment.,safe,safe,none,synthetic,False
+The user's email address is demo.account@example.com.,sensitive,pii,email,synthetic,True
+Please check the private environment configuration.,sensitive,organizational,private_configuration,synthetic,True
+Can you teach me hash tables with an example?,safe,safe,none,synthetic,False
+"Please use this address in the delivery form: 64 Sample Street, Mysuru. Can you include it in the example?",sensitive,pii,address,synthetic,True
+Please include this email in the form: sample.person@example.net.,sensitive,pii,email,synthetic,True
+Explain cloud computing in simple terms for a programming assignment.,safe,safe,none,synthetic,False
+Can you summarize the key concepts of C++ programming for my development environment.,safe,safe,none,synthetic,False
+Please validate this account number: 345678901234. Please explain how to protect it.,sensitive,financial,account,synthetic,True
+Can you check this API configuration containing demo-key-482910? This is part of a development test.,sensitive,credential,api_key,synthetic,True
+Give me a beginner-friendly explanation of Linux commands.,safe,safe,none,synthetic,False
+The account field contains 987654321098.,sensitive,financial,account,synthetic,True
+How is dynamic programming used in software development for my test application.,safe,safe,none,synthetic,False
+Please check the authentication configuration containing ExamplePass321!. This is part of a development test.,sensitive,credential,password,synthetic,True
+Please review this application configuration containing API_KEY=demo-api-key-83921. This is from a development environment.,sensitive,mixed,api_key,synthetic,True
+Please help me protect this financial identifier: 987654321098. This is for a test application.,sensitive,financial,account,synthetic,True
+Help me understand web development.,safe,safe,none,synthetic,False
+How would I implement SQL joins in Python?,safe,safe,none,synthetic,False
+This application uses sample.account@example.net as the user's email.,sensitive,pii,email,synthetic,True
+How would I implement computer architecture in C++?,safe,safe,none,synthetic,False
+How does HTTP requests work in a local test environment.,safe,safe,none,synthetic,False
+Help me debug this employee management system. Employee ID: EMP-SAMPLE-3519. Please suggest a solution.,sensitive,mixed,employee_id,synthetic,True
+Explain sorting algorithms in simple terms in a local test environment.,safe,safe,none,synthetic,False
+Help me prepare for an interview about cloud computing while learning software development.,safe,safe,none,synthetic,False
+My API key is demo-key-482910. This is part of a development test.,sensitive,credential,api_key,synthetic,True
+This API request contains the token sampleBearer8291. Please identify the issue.,sensitive,credential,access_token,synthetic,True
+Please review this application configuration containing API_KEY=demo-secret-key-7291. Can you help me troubleshoot this?,sensitive,mixed,api_key,synthetic,True
+What are the real-world applications of Linux commands for my development environment.,safe,safe,none,synthetic,False
+Can you debug my Flask application? My API key is test-api-token-48291.,sensitive,mixed,api_key,synthetic,True
+How would I implement JavaScript in Python?,safe,safe,none,synthetic,False
+What are the important concepts behind software testing in a prototype.,safe,safe,none,synthetic,False
+Help me prepare for an interview about FastAPI.,safe,safe,none,synthetic,False
+Please troubleshoot authentication with demo_token_83A91X.,sensitive,credential,access_token,synthetic,True
+Why is authentication failing with this API key: mock-api-482917?,sensitive,credential,api_key,synthetic,True
+How would I implement binary search in Python in a prototype.,safe,safe,none,synthetic,False
+The company is working on a confidential project called Project Aurora.,sensitive,organizational,confidential_information,synthetic,True
+What should a beginner know about CSS Flexbox in a local test environment.,safe,safe,none,synthetic,False
+Please help me redact this card number: 3566002020360505.,sensitive,financial,card,synthetic,True
+Can you improve this REST API? The access token is testAuthToken472.,sensitive,mixed,access_token,synthetic,True
+How does sorting algorithms work?,safe,safe,none,synthetic,False
+Can you provide notes about process scheduling?,safe,safe,none,synthetic,False
+Can you validate this test payment card: 4012888888881881?,sensitive,financial,card,synthetic,True
+My test card number is 3530111333300000. Please explain how to protect it.,sensitive,financial,card,synthetic,True
+Explain software testing in simple terms for a college project.,safe,safe,none,synthetic,False
+Help me prepare for an interview about responsive web design.,safe,safe,none,synthetic,False
+Give me a coding example related to hash tables while learning software development.,safe,safe,none,synthetic,False
+Can you provide notes about database indexing in a local test environment.,safe,safe,none,synthetic,False
+The demo account password is DemoPass482!.,sensitive,credential,password,synthetic,True
+Please review this configuration: PASSWORD=DemoPass482!.,sensitive,credential,password,synthetic,True
+Can you validate this email address: test.user@example.org? Please check the format.,sensitive,pii,email,synthetic,True
+What are common mistakes when learning machine learning?,safe,safe,none,synthetic,False
+The customer can be contacted at sample.person@example.net. Please process this information.,sensitive,pii,email,synthetic,True
+What are common mistakes when learning database normalization in a sample project.,safe,safe,none,synthetic,False
+Can you give me a practical example of Kruskal's algorithm for a college project.,safe,safe,none,synthetic,False
+Can you validate this test payment card: 4111111111111111?,sensitive,financial,card,synthetic,True
+Help me debug this employee management system. Employee ID: EMP-DEV-4921. Can you help me troubleshoot this?,sensitive,mixed,employee_id,synthetic,True
+How would I implement FastAPI in C++ for a programming assignment.,safe,safe,none,synthetic,False
+Can you give me a practical example of Django?,safe,safe,none,synthetic,False
+Can you teach me HTTP requests with an example?,safe,safe,none,synthetic,False
+Give me a coding example related to HTTP requests.,safe,safe,none,synthetic,False
+What are the important concepts behind Linux commands?,safe,safe,none,synthetic,False
+Why is my login system failing? The password is DemoPass482!. This is from a development environment.,sensitive,mixed,password,synthetic,True
+What are common mistakes when learning SQL joins?,safe,safe,none,synthetic,False
+Help me prepare for an interview about binary search for my test application.,safe,safe,none,synthetic,False
+Can you summarize the key concepts of Linux commands for a college project.,safe,safe,none,synthetic,False
+Please include employee identifier STAFF-DEMO-3812 in the internal report.,sensitive,organizational,employee_id,synthetic,True
+The card field contains the following number: 4000000000000002. Can you validate the format?,sensitive,financial,card,synthetic,True
+What are common mistakes when learning Linux commands for a college project.,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of data structures for my development environment.,safe,safe,none,synthetic,False
+Please help me redact this card number: 3530111333300000. Please explain how to protect it.,sensitive,financial,card,synthetic,True
+Please add 9012345678 to the contact form.,sensitive,pii,phone,synthetic,True
+Give me some interview questions about binary trees.,safe,safe,none,synthetic,False
+Why does this database connection fail: mysql://test_user:MockPass731@localhost:3306/sampledb? This is part of a development test.,sensitive,credential,database_credential,synthetic,True
+Can you improve this customer-management application? The customer email is training.user@example.com. Please review the code.,sensitive,mixed,email,synthetic,True
+How can I practice CSS Flexbox effectively while learning software development.,safe,safe,none,synthetic,False
+Why is this access token not working: demoAuthToken8392? Can you explain what is wrong?,sensitive,credential,access_token,synthetic,True
+What are the important concepts behind object oriented programming for my test application.,safe,safe,none,synthetic,False
+Can you compare page replacement algorithms with a related concept for an academic project.,safe,safe,none,synthetic,False
+"Can you refactor this customer application while preserving the address 55 Example Avenue, Delhi? Can you help me identify the issue?",sensitive,mixed,address,synthetic,True
+This application uses demo.contact@example.org as the user's email. Can you help me format this?,sensitive,pii,email,synthetic,True
+Please check this payment processing code using card number 3530111333300000.,sensitive,mixed,card,synthetic,True
+Please include this contact number: 9123405678. Please process this information.,sensitive,pii,phone,synthetic,True
+The demo user's mobile number is 9090901234.,sensitive,pii,phone,synthetic,True
+The private configuration contains INTERNAL_DB_HOST=dev-db-01. This is for internal documentation.,sensitive,organizational,private_configuration,synthetic,True
+Can you teach me machine learning with an example?,safe,safe,none,synthetic,False
+Can you improve this customer-management application? The customer email is demo.contact@example.org. This is for a test project.,sensitive,mixed,email,synthetic,True
+Why is my login system failing? The password is DemoLogin82#.,sensitive,mixed,password,synthetic,True
+Can you teach me virtual memory with an example while learning software development.,safe,safe,none,synthetic,False
+The application contains financial identifier 345678901234. This is for a test application.,sensitive,financial,account,synthetic,True
+Can you debug my Flask application? My API key is mock-api-482917. Please suggest a solution.,sensitive,mixed,api_key,synthetic,True
+Can you improve this payment application? The test card number is 4012888888881881. Can you help me troubleshoot this?,sensitive,mixed,card,synthetic,True
+Can you improve this REST API? The access token is demoToken_X821. Can you help me identify the issue?,sensitive,mixed,access_token,synthetic,True
+Why is my login system failing? The password is DemoSecure44!. Can you explain what is wrong?,sensitive,mixed,password,synthetic,True
+The banking form contains this account number: 987654321098. Can you validate the format?,sensitive,financial,account,synthetic,True
+Give me a beginner-friendly explanation of virtual memory.,safe,safe,none,synthetic,False
+What are the real-world applications of hash tables for my development environment.,safe,safe,none,synthetic,False
+What should a beginner know about cloud computing?,safe,safe,none,synthetic,False
+The card field contains the following number: 3566002020360505. Please explain how to protect it.,sensitive,financial,card,synthetic,True
+Please troubleshoot authentication with demoAuthToken8392.,sensitive,credential,access_token,synthetic,True
+Can you explain graph algorithms step by step in a prototype.,safe,safe,none,synthetic,False
+Please review this configuration: API_KEY=test-api-token-48291.,sensitive,credential,api_key,synthetic,True
+Give me a coding example related to classification algorithms for a programming assignment.,safe,safe,none,synthetic,False
+The payment form contains this test card number: 3566002020360505. Can you validate the format?,sensitive,financial,card,synthetic,True
+Can you summarize the key concepts of hash tables for my test application.,safe,safe,none,synthetic,False
+Please use test.contact@example.net as my contact email. Can you include it in the example?,sensitive,pii,email,synthetic,True
+The application contains financial identifier 234567890123. Can you help me process this?,sensitive,financial,account,synthetic,True
+This information belongs to an internal company project.,sensitive,organizational,confidential_information,synthetic,True
+How can I practice Java programming effectively?,safe,safe,none,synthetic,False
+Can you compare binary trees with a related concept in a demo application.,safe,safe,none,synthetic,False
+The demo account password is MockPassword55!. Please identify the issue.,sensitive,credential,password,synthetic,True
+How is linear regression used in software development for a programming assignment.,safe,safe,none,synthetic,False
+Please prepare an internal summary of this confidential system.,sensitive,organizational,confidential_information,synthetic,True
+"Please format this address correctly: 64 Sample Street, Mysuru.",sensitive,pii,address,synthetic,True
+The test application contains this database credential: mongodb://demo:DemoPass92@localhost:27017/testdb. Can you help me debug the problem?,sensitive,credential,database_credential,synthetic,True
+My email address is demo.contact@example.org. Can you help me format this?,sensitive,pii,email,synthetic,True
+Please check this payment processing code using card number 378282246310005. Can you help me identify the issue?,sensitive,mixed,card,synthetic,True
+Explain the time complexity associated with data structures.,safe,safe,none,synthetic,False
+Can you verify the formatting of this card number: 4111111111111111? Can you help me process this?,sensitive,financial,card,synthetic,True
+How would I implement recursion in Python in a demo application.,safe,safe,none,synthetic,False
+Can you compare linked lists with a related concept?,safe,safe,none,synthetic,False
+Why is my login system failing? The password is DemoLogin82#. This is from a development environment.,sensitive,mixed,password,synthetic,True
+Help me understand REST architecture for an academic project.,safe,safe,none,synthetic,False
+Please review this application configuration containing API_KEY=test-api-918273. Please suggest a solution.,sensitive,mixed,api_key,synthetic,True
+How is neural networks used in software development?,safe,safe,none,synthetic,False
+What are the important concepts behind machine learning?,safe,safe,none,synthetic,False
+The company is working on a confidential project called Project Aurora. This is part of a test environment.,sensitive,organizational,confidential_information,synthetic,True
+What are the real-world applications of sorting algorithms for an academic project.,safe,safe,none,synthetic,False
+How would I implement binary search in Python?,safe,safe,none,synthetic,False
+How does object oriented programming work?,safe,safe,none,synthetic,False
+Show me a simple example of Git and GitHub.,safe,safe,none,synthetic,False
+Why is the internal development server unavailable? This is part of a test environment.,sensitive,organizational,internal_server,synthetic,True
+Why is this access token not working: sample_token_X72K?,sensitive,credential,access_token,synthetic,True
+Give me some interview questions about graph algorithms.,safe,safe,none,synthetic,False
+What are the real-world applications of Git and GitHub?,safe,safe,none,synthetic,False
+This information belongs to an internal company project. This is part of a test environment.,sensitive,organizational,confidential_information,synthetic,True
+Help me understand operating systems.,safe,safe,none,synthetic,False
+How would I implement Floyd Warshall algorithm in Python for an academic project.,safe,safe,none,synthetic,False
+Help me prepare for an interview about operating systems for a college project.,safe,safe,none,synthetic,False
+Can you validate this test payment card: 4000000000000002? This is synthetic test data.,sensitive,financial,card,synthetic,True
+Can you teach me web development with an example in a local test environment.,safe,safe,none,synthetic,False
+The demo bank account number is 789012345678. Can you help me process this?,sensitive,financial,account,synthetic,True
+"The user's address is 12 Training Road, Coimbatore. Please process this information.",sensitive,pii,address,synthetic,True
+The development environment contains a private configuration value. Can you help me document it?,sensitive,organizational,private_configuration,synthetic,True
+Show me a simple example of JavaScript for a programming assignment.,safe,safe,none,synthetic,False
+How does cloud computing work in a prototype.,safe,safe,none,synthetic,False
+How would I implement deadlocks in C++?,safe,safe,none,synthetic,False
+The demo account email is sample.account@example.net.,sensitive,pii,email,synthetic,True
+"The demo user's address is 91 Mock Colony, Mumbai. Please process this information.",sensitive,pii,address,synthetic,True
+My phone number is 9345678123. Please process this information.,sensitive,pii,phone,synthetic,True
+What should a beginner know about responsive web design?,safe,safe,none,synthetic,False
+Can you summarize the key concepts of Python programming in a local test environment.,safe,safe,none,synthetic,False
+What are the real-world applications of dynamic programming?,safe,safe,none,synthetic,False
+Help me prepare for an interview about object oriented programming for an academic project.,safe,safe,none,synthetic,False
+How is hash tables used in software development for my development environment.,safe,safe,none,synthetic,False
+"The customer lives at 12 Training Road, Coimbatore.",sensitive,pii,address,synthetic,True
+How would I implement SQL joins in C++?,safe,safe,none,synthetic,False
+Please review these database credentials: mongodb://test:ExamplePass321!@localhost:27017/demo. Can you explain what is wrong?,sensitive,credential,database_credential,synthetic,True
+Give me some interview questions about responsive web design.,safe,safe,none,synthetic,False
+The access token for my test application is mockBearerToken482.,sensitive,credential,access_token,synthetic,True
+Can you explain Dijkstra's algorithm step by step?,safe,safe,none,synthetic,False
+How would I implement React in Python for an academic project.,safe,safe,none,synthetic,False
+Why does this database connection fail: mysql://demo_user:MockLogin92#@localhost:3306/testdb? Please identify the issue.,sensitive,credential,database_credential,synthetic,True
+Please include employee identifier EMP-DEMO-7284 in the internal report.,sensitive,organizational,employee_id,synthetic,True
+The application contains financial identifier 789012345678. Can you validate the format?,sensitive,financial,account,synthetic,True
+What should a beginner know about HTTP requests?,safe,safe,none,synthetic,False
+Can you compare database indexing with a related concept?,safe,safe,none,synthetic,False
+Can you summarize the key concepts of Kruskal's algorithm?,safe,safe,none,synthetic,False
+Please troubleshoot authentication with sample_token_X72K. This is from my local environment.,sensitive,credential,access_token,synthetic,True
+How does data structures work?,safe,safe,none,synthetic,False
+Our internal server is 10.20.30.15. This is part of a test environment.,sensitive,organizational,internal_server,synthetic,True
+"Can you refactor this customer application while preserving the address 31 Demo Lane, Kochi?",sensitive,mixed,address,synthetic,True
+My API key is mock-key-X9281. Can you help me debug the problem?,sensitive,credential,api_key,synthetic,True
+Can you give me a practical example of Linux commands in a sample project.,safe,safe,none,synthetic,False
+How would I implement software testing in C++ for my test application.,safe,safe,none,synthetic,False
+What are the real-world applications of database indexing for a college project.,safe,safe,none,synthetic,False
+Can you debug my Flask application? My API key is demo-secret-key-7291. Can you help me identify the issue?,sensitive,mixed,api_key,synthetic,True
+This test transaction uses card number 6011111111111117.,sensitive,financial,card,synthetic,True
+Please review this application configuration containing API_KEY=demo-key-482910. Can you help me identify the issue?,sensitive,mixed,api_key,synthetic,True
+Can you improve this REST API? The access token is sample_token_X72K. Please review the code.,sensitive,mixed,access_token,synthetic,True
+Can you explain hash tables step by step?,safe,safe,none,synthetic,False
+I am debugging an API request that uses demo-key-482910.,sensitive,credential,api_key,synthetic,True
+Why is authentication failing with this API key: demo-api-key-83921?,sensitive,credential,api_key,synthetic,True
+"Please include this address: 91 Mock Colony, Mumbai. Can you include it in the example?",sensitive,pii,address,synthetic,True
+Can you compare Dijkstra's algorithm with a related concept in a demo application.,safe,safe,none,synthetic,False
+What are the important concepts behind linked lists in a sample project.,safe,safe,none,synthetic,False
+The customer can be reached at 9000012345.,sensitive,pii,phone,synthetic,True
+How does REST architecture work?,safe,safe,none,synthetic,False
+Can you validate this phone number: 9090901234?,sensitive,pii,phone,synthetic,True
+Please check this payment processing code using card number 5555555555554444. Can you explain what is wrong?,sensitive,mixed,card,synthetic,True
+How would I implement JavaScript in C++?,safe,safe,none,synthetic,False
+This API request contains the token mock_access_7192.,sensitive,credential,access_token,synthetic,True
+Explain the time complexity associated with classification algorithms.,safe,safe,none,synthetic,False
+Explain linked lists in simple terms in a demo application.,safe,safe,none,synthetic,False
+Help me prepare for an interview about responsive web design in a prototype.,safe,safe,none,synthetic,False
+Explain the time complexity associated with computer networks.,safe,safe,none,synthetic,False
+Please validate employee ID STAFF-DEV-6241 in this test record. This is for internal documentation.,sensitive,organizational,employee_id,synthetic,True
+I am debugging an API request that uses demo-secret-key-7291.,sensitive,credential,api_key,synthetic,True
+Show me a simple example of operating systems while learning software development.,safe,safe,none,synthetic,False
+Can you explain classification algorithms step by step in a prototype.,safe,safe,none,synthetic,False
+Please include this email in the form: training.user@example.com.,sensitive,pii,email,synthetic,True
+Please format this phone number correctly: 9988776655. Please process this information.,sensitive,pii,phone,synthetic,True
+How would I implement sorting algorithms in Python?,safe,safe,none,synthetic,False
+Explain the time complexity associated with hash tables.,safe,safe,none,synthetic,False
+What are the important concepts behind binary trees in a prototype.,safe,safe,none,synthetic,False
+Give me some interview questions about binary trees for a college project.,safe,safe,none,synthetic,False
+The development server is 10.10.20.25. Please keep this information private.,sensitive,organizational,internal_server,synthetic,True
+How is sorting algorithms used in software development in a sample project.,safe,safe,none,synthetic,False
+Explain operating systems in simple terms in a local test environment.,safe,safe,none,synthetic,False
+Please validate this account number: 456789123456.,sensitive,financial,account,synthetic,True
+Can you provide a practice problem involving linear regression for my test application.,safe,safe,none,synthetic,False
+How does cloud computing work?,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of database indexing for an academic project.,safe,safe,none,synthetic,False
+Can you explain Floyd Warshall algorithm step by step for my test application.,safe,safe,none,synthetic,False
+Please check the payment form containing 5555555555554444. Please explain how to protect it.,sensitive,financial,card,synthetic,True
+"Please include this address: 91 Mock Colony, Mumbai. Please process this information.",sensitive,pii,address,synthetic,True
+Can you improve this customer-management application? The customer email is demo.contact@example.org. Can you help me identify the issue?,sensitive,mixed,email,synthetic,True
+Can you teach me sorting algorithms with an example in a demo application.,safe,safe,none,synthetic,False
+How can I practice Git and GitHub effectively in a local test environment.,safe,safe,none,synthetic,False
+"Can you validate this address: 25 Example Street, Pune?",sensitive,pii,address,synthetic,True
+This test transaction uses card number 3566002020360505.,sensitive,financial,card,synthetic,True
+Can you format this confidential project information for internal documentation? This is for internal documentation.,sensitive,organizational,confidential_information,synthetic,True
+Explain the time complexity associated with Floyd Warshall algorithm while learning software development.,safe,safe,none,synthetic,False
+Can you compare SQL joins with a related concept?,safe,safe,none,synthetic,False
+Can you provide a practice problem involving computer architecture in a sample project.,safe,safe,none,synthetic,False
+Can you teach me responsive web design with an example?,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of CSS Flexbox in a prototype.,safe,safe,none,synthetic,False
+Can you provide a practice problem involving Java programming?,safe,safe,none,synthetic,False
+"The demo user's address is 91 Mock Colony, Mumbai. Please check the format.",sensitive,pii,address,synthetic,True
+Show me a simple example of decision trees for an academic project.,safe,safe,none,synthetic,False
+Can you teach me React with an example?,safe,safe,none,synthetic,False
+Can you provide a practice problem involving computer networks for a programming assignment.,safe,safe,none,synthetic,False
+Help me prepare for an interview about cloud computing in a demo application.,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of Git and GitHub for a college project.,safe,safe,none,synthetic,False
+Help me prepare for an interview about FastAPI for my development environment.,safe,safe,none,synthetic,False
+Can you troubleshoot the internal server at 10.20.30.15?,sensitive,organizational,internal_server,synthetic,True
+Can you validate this test payment card: 3530111333300000? Can you help me process this?,sensitive,financial,card,synthetic,True
+Can you teach me SQL joins with an example?,safe,safe,none,synthetic,False
+How would I implement Python programming in Python for an academic project.,safe,safe,none,synthetic,False
+Can you give me a practical example of responsive web design in a demo application.,safe,safe,none,synthetic,False
+What should a beginner know about FastAPI?,safe,safe,none,synthetic,False
+How would I implement computer architecture in Python in a sample project.,safe,safe,none,synthetic,False
+Explain database normalization in simple terms in a prototype.,safe,safe,none,synthetic,False
+The application connects to internal server DEV-SERVER-07. Please explain the configuration.,sensitive,organizational,internal_server,synthetic,True
+What are the important concepts behind dynamic programming?,safe,safe,none,synthetic,False
+How would I implement operating systems in Python?,safe,safe,none,synthetic,False
+Can you summarize the key concepts of SQL joins for my test application.,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of responsive web design in a sample project.,safe,safe,none,synthetic,False
+"The application contains this address: 55 Example Avenue, Delhi.",sensitive,pii,address,synthetic,True
+Can you help document this private company project? This is part of a test environment.,sensitive,organizational,confidential_information,synthetic,True
+Help me debug this employee management system. Employee ID: STAFF-DEMO-3812. Please review the code.,sensitive,mixed,employee_id,synthetic,True
+Can you verify the formatting of this card number: 5555555555554444?,sensitive,financial,card,synthetic,True
+Help me understand process scheduling in a prototype.,safe,safe,none,synthetic,False
+How would I implement JavaScript in Python in a prototype.,safe,safe,none,synthetic,False
+Give me a coding example related to Kruskal's algorithm.,safe,safe,none,synthetic,False
+What are the important concepts behind support vector machines?,safe,safe,none,synthetic,False
+What are the important concepts behind binary search?,safe,safe,none,synthetic,False
+Can you provide a practice problem involving binary trees for my development environment.,safe,safe,none,synthetic,False
+Why does this database connection fail: postgresql://sample:TestPass821@localhost:5432/sampledb? Can you explain what is wrong?,sensitive,credential,database_credential,synthetic,True
+Show me a simple example of software testing in a sample project.,safe,safe,none,synthetic,False
+Can you summarize the key concepts of Java programming for an academic project.,safe,safe,none,synthetic,False
+I need to add employee EMP-TEST-2048 to the internal database. This is part of a test environment.,sensitive,organizational,employee_id,synthetic,True
+Can you teach me linear regression with an example?,safe,safe,none,synthetic,False
+Help me prepare for an interview about virtual memory in a demo application.,safe,safe,none,synthetic,False
+What are the real-world applications of computer networks for a programming assignment.,safe,safe,none,synthetic,False
+"Can you validate this address: 12 Training Road, Coimbatore?",sensitive,pii,address,synthetic,True
+What are common mistakes when learning cloud computing?,safe,safe,none,synthetic,False
+How can I practice process scheduling effectively in a prototype.,safe,safe,none,synthetic,False
+Can you summarize the key concepts of Python programming while learning software development.,safe,safe,none,synthetic,False
+"Can you refactor this customer application while preserving the address 28 Test Road, Ahmedabad? Can you help me identify the issue?",sensitive,mixed,address,synthetic,True
+What are the important concepts behind REST APIs for my test application.,safe,safe,none,synthetic,False
+Can you explain CSS Flexbox step by step for an academic project.,safe,safe,none,synthetic,False
+What should a beginner know about computer networks in a local test environment.,safe,safe,none,synthetic,False
+The internal HR system contains employee ID STAFF-DEMO-3812.,sensitive,organizational,employee_id,synthetic,True
+Give me a coding example related to Dijkstra's algorithm.,safe,safe,none,synthetic,False
+Can you validate this test payment card: 4000000000000002? Please explain how to protect it.,sensitive,financial,card,synthetic,True
+Can you teach me operating systems with an example for my development environment.,safe,safe,none,synthetic,False
+How would I implement Python programming in Python for a college project.,safe,safe,none,synthetic,False
+The account field contains 456789123456.,sensitive,financial,account,synthetic,True
+What are the real-world applications of hash tables?,safe,safe,none,synthetic,False
+Can you give me a practical example of deadlocks?,safe,safe,none,synthetic,False
+The application stores the phone number 9000012345.,sensitive,pii,phone,synthetic,True
+Help me understand C++ programming in a demo application.,safe,safe,none,synthetic,False
+The demo bank account number is 789012345678.,sensitive,financial,account,synthetic,True
+Can you diagnose connectivity to the internal server? Please keep this information private.,sensitive,organizational,internal_server,synthetic,True
+Can you help document this private company project? Can you help me document it?,sensitive,organizational,confidential_information,synthetic,True
+Can you summarize the key concepts of version control?,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of decision trees.,safe,safe,none,synthetic,False
+Can you provide notes about Django?,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of sorting algorithms in a local test environment.,safe,safe,none,synthetic,False
+Please organize this confidential internal system information. Please keep this information private.,sensitive,organizational,confidential_information,synthetic,True
+Help me understand Docker.,safe,safe,none,synthetic,False
+What are the real-world applications of neural networks?,safe,safe,none,synthetic,False
+Give me some interview questions about HTTP requests.,safe,safe,none,synthetic,False
+Can you improve this REST API? The access token is demoAuthToken8392.,sensitive,mixed,access_token,synthetic,True
+Show me a simple example of deadlocks for my test application.,safe,safe,none,synthetic,False
+The login configuration contains password ExamplePass321!. This is from my local environment.,sensitive,credential,password,synthetic,True
+Give me a beginner-friendly explanation of software testing.,safe,safe,none,synthetic,False
+Please troubleshoot authentication with demoToken_X821.,sensitive,credential,access_token,synthetic,True
+The private configuration contains INTERNAL_DB_HOST=dev-db-01.,sensitive,organizational,private_configuration,synthetic,True
+Can you provide a practice problem involving operating systems for an academic project.,safe,safe,none,synthetic,False
+Can you debug this API call using token testAuthToken472?,sensitive,credential,access_token,synthetic,True
+Can you debug my Flask application? My API key is sk-test-A7B82C91D4. This is from a development environment.,sensitive,mixed,api_key,synthetic,True
+Can you check the private configuration used by our test system? This is for internal documentation.,sensitive,organizational,private_configuration,synthetic,True
+Can you summarize the key concepts of responsive web design?,safe,safe,none,synthetic,False
+Can you compare graph algorithms with a related concept?,safe,safe,none,synthetic,False
+Please fix this contact form. The user's phone number is 9012345678. Can you explain what is wrong?,sensitive,mixed,phone,synthetic,True
+Please include this contact number: 9090901234. This is for a test application.,sensitive,pii,phone,synthetic,True
+Please review this database connection string: mysql://demo_user:MockLogin92#@localhost:3306/testdb. Can you help me debug the problem?,sensitive,credential,database_credential,synthetic,True
+What are the advantages and disadvantages of page replacement algorithms in a sample project.,safe,safe,none,synthetic,False
+Can you summarize the key concepts of neural networks for an academic project.,safe,safe,none,synthetic,False
+"The customer lives at 31 Demo Lane, Kochi.",sensitive,pii,address,synthetic,True
+Please fix this contact form. The user's phone number is 9123405678. This is from a development environment.,sensitive,mixed,phone,synthetic,True
+Can you review this account number: 456789123456?,sensitive,financial,account,synthetic,True
+I need to document these internal configuration values. Please keep this information private.,sensitive,organizational,private_configuration,synthetic,True
+This test transaction uses card number 3566002020360505. This is synthetic test data.,sensitive,financial,card,synthetic,True
+Please review this application configuration containing API_KEY=mock-key-X9281. This is from a development environment.,sensitive,mixed,api_key,synthetic,True
+"The user's address is 77 Test Avenue, Hyderabad.",sensitive,pii,address,synthetic,True
+Help me prepare for an interview about binary trees.,safe,safe,none,synthetic,False
+The application contains financial identifier 112233445566. Please explain how to protect it.,sensitive,financial,account,synthetic,True
+How does SQL joins work for a college project.,safe,safe,none,synthetic,False
+How is graph algorithms used in software development?,safe,safe,none,synthetic,False
+The customer can be reached at 9988776655.,sensitive,pii,phone,synthetic,True
+Give me a coding example related to linear regression in a local test environment.,safe,safe,none,synthetic,False
+The account field contains 345678901234. Can you help me process this?,sensitive,financial,account,synthetic,True
+This test transaction uses card number 378282246310005.,sensitive,financial,card,synthetic,True
+Our internal application uses employee ID EMP-SAMPLE-7741.,sensitive,organizational,employee_id,synthetic,True
+My password is DemoSecure44!. This is from my local environment.,sensitive,credential,password,synthetic,True
+What are the important concepts behind graph algorithms?,safe,safe,none,synthetic,False
+Can you check this API configuration containing test-api-918273? Can you explain what is wrong?,sensitive,credential,api_key,synthetic,True
+Please organize the confidential project details. This is for internal documentation.,sensitive,organizational,confidential_information,synthetic,True
+Give me a coding example related to CSS Flexbox for a programming assignment.,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of HTTP requests while learning software development.,safe,safe,none,synthetic,False
+What are the important concepts behind REST architecture in a demo application.,safe,safe,none,synthetic,False
+Please add 9345678123 to the contact form.,sensitive,pii,phone,synthetic,True
+Can you improve this REST API? The access token is mockBearerToken482.,sensitive,mixed,access_token,synthetic,True
+How can I practice database indexing effectively in a prototype.,safe,safe,none,synthetic,False
+Can you teach me REST APIs with an example for an academic project.,safe,safe,none,synthetic,False
+Please validate this account number: 987654321098.,sensitive,financial,account,synthetic,True
+Give me a coding example related to binary search in a demo application.,safe,safe,none,synthetic,False
+The company is working on a confidential project called Project Aurora. This is for internal documentation.,sensitive,organizational,confidential_information,synthetic,True
+The user's phone number is 9345678123. Can you include it in the example?,sensitive,pii,phone,synthetic,True
+Please check the authentication configuration containing MockLogin92#. This is part of a development test.,sensitive,credential,password,synthetic,True
+The test application contains this database credential: mysql://demo_user:MockLogin92#@localhost:3306/testdb. Can you help me debug the problem?,sensitive,credential,database_credential,synthetic,True
+The internal HR system contains employee ID EMP-DEMO-7284. Please keep this information private.,sensitive,organizational,employee_id,synthetic,True
+Why is my login system failing? The password is TestingPass902$.,sensitive,mixed,password,synthetic,True
+What are common mistakes when learning graph algorithms in a sample project.,safe,safe,none,synthetic,False
+Can you improve this REST API? The access token is demo_token_83A91X.,sensitive,mixed,access_token,synthetic,True
+The demo account password is MockLogin92#. This is from my local environment.,sensitive,credential,password,synthetic,True
+How would I implement data structures in Python for my development environment.,safe,safe,none,synthetic,False
+Can you prepare internal documentation for this confidential project?,sensitive,organizational,confidential_information,synthetic,True
+The private configuration contains INTERNAL_DB_HOST=dev-db-01. Please explain the configuration.,sensitive,organizational,private_configuration,synthetic,True
+Give me some interview questions about HTTP requests in a sample project.,safe,safe,none,synthetic,False
+Can you validate this test payment card: 378282246310005? Can you help me process this?,sensitive,financial,card,synthetic,True
+Give me a beginner-friendly explanation of object oriented programming for an academic project.,safe,safe,none,synthetic,False
+How does web development work in a sample project.,safe,safe,none,synthetic,False
+What are the important concepts behind classification algorithms in a demo application.,safe,safe,none,synthetic,False
+How is C++ programming used in software development for a college project.,safe,safe,none,synthetic,False
+Explain the time complexity associated with operating systems while learning software development.,safe,safe,none,synthetic,False
+Can you analyze this login configuration? PASSWORD=ExamplePass321!. Please suggest a solution.,sensitive,mixed,password,synthetic,True
+Please help me redact this card number: 378282246310005.,sensitive,financial,card,synthetic,True
+I need to add employee STAFF-DEMO-3812 to the internal database.,sensitive,organizational,employee_id,synthetic,True
+Help me understand machine learning.,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of C++ programming?,safe,safe,none,synthetic,False
+How can I practice neural networks effectively for a college project.,safe,safe,none,synthetic,False
+Please include this contact number: 9988776655.,sensitive,pii,phone,synthetic,True
+The development server is 10.10.20.25. This is for internal documentation.,sensitive,organizational,internal_server,synthetic,True
+How would I implement dynamic programming in Python in a local test environment.,safe,safe,none,synthetic,False
+I am testing login with the password SamplePwd821@.,sensitive,credential,password,synthetic,True
+Can you provide a practice problem involving C++ programming for an academic project.,safe,safe,none,synthetic,False
+Can you explain sorting algorithms step by step?,safe,safe,none,synthetic,False
+Can you compare C++ programming with a related concept in a local test environment.,safe,safe,none,synthetic,False
+Please help me protect this financial identifier: 456789123456. Please explain how to protect it.,sensitive,financial,account,synthetic,True
+What are the advantages and disadvantages of React in a demo application.,safe,safe,none,synthetic,False
+"Can you refactor this customer application while preserving the address 28 Test Road, Ahmedabad? This is from a development environment.",sensitive,mixed,address,synthetic,True
+Explain responsive web design in simple terms for a programming assignment.,safe,safe,none,synthetic,False
+Can you provide a practice problem involving sorting algorithms?,safe,safe,none,synthetic,False
+How can I practice binary search effectively?,safe,safe,none,synthetic,False
+This development application is configured with mock-key-X9281.,sensitive,credential,api_key,synthetic,True
+"My address is 42 Demo Street, Chennai. Please process this information.",sensitive,pii,address,synthetic,True
+Help me prepare for an interview about support vector machines.,safe,safe,none,synthetic,False
+How is neural networks used in software development for my test application.,safe,safe,none,synthetic,False
+What are the important concepts behind computer networks?,safe,safe,none,synthetic,False
+Please validate employee ID EMP-SAMPLE-3519 in this test record.,sensitive,organizational,employee_id,synthetic,True
+"My address is 91 Mock Colony, Mumbai.",sensitive,pii,address,synthetic,True
+How does REST architecture work while learning software development.,safe,safe,none,synthetic,False
+Can you explain Python programming step by step?,safe,safe,none,synthetic,False
+What are common mistakes when learning linear regression in a local test environment.,safe,safe,none,synthetic,False
+What are the real-world applications of machine learning for my development environment.,safe,safe,none,synthetic,False
+The demo bank account number is 123456789012.,sensitive,financial,account,synthetic,True
+This test transaction uses card number 378282246310005. Can you validate the format?,sensitive,financial,card,synthetic,True
+Please check the authentication configuration containing SamplePwd821@. Please identify the issue.,sensitive,credential,password,synthetic,True
+What should a beginner know about Floyd Warshall algorithm?,safe,safe,none,synthetic,False
+"Please include this address: 18 Sample Road, Bengaluru.",sensitive,pii,address,synthetic,True
+The test service uses the following API key: mock-key-X9281.,sensitive,credential,api_key,synthetic,True
+Help me understand classification algorithms.,safe,safe,none,synthetic,False
+"Please include this address: 55 Example Avenue, Delhi. Can you help me format this?",sensitive,pii,address,synthetic,True
+Can you explain software testing step by step?,safe,safe,none,synthetic,False
+How would I implement web development in C++ in a local test environment.,safe,safe,none,synthetic,False
+Please organize this confidential internal system information.,sensitive,organizational,confidential_information,synthetic,True
+The application sends this access token: sample_token_X72K. Can you help me debug the problem?,sensitive,credential,access_token,synthetic,True
+Please organize this confidential internal system information. Please explain the configuration.,sensitive,organizational,confidential_information,synthetic,True
+The API request contains this credential: test-api-918273.,sensitive,credential,api_key,synthetic,True
+Can you explain C++ programming step by step for a programming assignment.,safe,safe,none,synthetic,False
+Can you help document this private company project? This is for internal documentation.,sensitive,organizational,confidential_information,synthetic,True
+Can you compare sorting algorithms with a related concept while learning software development.,safe,safe,none,synthetic,False
+Can you improve this customer-management application? The customer email is demo.contact@example.org. Can you explain what is wrong?,sensitive,mixed,email,synthetic,True
+Explain object oriented programming in simple terms.,safe,safe,none,synthetic,False
+How can I practice computer networks effectively for a college project.,safe,safe,none,synthetic,False
+The internal HR system contains employee ID WORKER-TEST-9132. Please explain the configuration.,sensitive,organizational,employee_id,synthetic,True
+How does graph algorithms work for my development environment.,safe,safe,none,synthetic,False
+The demo bank account number is 987654321098.,sensitive,financial,account,synthetic,True
+How is Dijkstra's algorithm used in software development in a local test environment.,safe,safe,none,synthetic,False
+What should a beginner know about FastAPI for my development environment.,safe,safe,none,synthetic,False
+Can you compare version control with a related concept in a sample project.,safe,safe,none,synthetic,False
+Please include this email in the form: mock.user@example.com. Please process this information.,sensitive,pii,email,synthetic,True
+Our internal server is 10.20.30.15.,sensitive,organizational,internal_server,synthetic,True
+Give me a coding example related to software testing for my development environment.,safe,safe,none,synthetic,False
+Explain linear regression in simple terms.,safe,safe,none,synthetic,False
+What should a beginner know about Linux commands?,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of C++ programming.,safe,safe,none,synthetic,False
+Help me document the internal server setup.,sensitive,organizational,internal_server,synthetic,True
+"Can you validate this address: 28 Test Road, Ahmedabad?",sensitive,pii,address,synthetic,True
+"The application contains this address: 12 Training Road, Coimbatore. This is for a test application.",sensitive,pii,address,synthetic,True
+Can you explain deadlocks step by step for a college project.,safe,safe,none,synthetic,False
+Please fix this contact form. The user's phone number is 9090901234. Please review the code.,sensitive,mixed,phone,synthetic,True
+Please organize the confidential project details.,sensitive,organizational,confidential_information,synthetic,True
+Can you teach me binary search with an example?,safe,safe,none,synthetic,False
+"Please include this address: 64 Sample Street, Mysuru.",sensitive,pii,address,synthetic,True
+Can you provide notes about SQL joins for my development environment.,safe,safe,none,synthetic,False
+How would I implement virtual memory in C++ in a demo application.,safe,safe,none,synthetic,False
+My account is registered with test.user@example.org. Can you include it in the example?,sensitive,pii,email,synthetic,True
+How can I practice machine learning effectively?,safe,safe,none,synthetic,False
+Can you provide notes about Django for a programming assignment.,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of database normalization in a demo application.,safe,safe,none,synthetic,False
+I need to add employee EMP-SAMPLE-3519 to the internal database.,sensitive,organizational,employee_id,synthetic,True
+Please include staff ID STAFF-DEMO-3812 in the internal document. This is for internal documentation.,sensitive,organizational,employee_id,synthetic,True
+My phone number is 9988776655.,sensitive,pii,phone,synthetic,True
+Give me some interview questions about machine learning in a demo application.,safe,safe,none,synthetic,False
+Can you give me a practical example of responsive web design for a programming assignment.,safe,safe,none,synthetic,False
+The request uses this bearer token: testAuthToken472. Can you explain what is wrong?,sensitive,credential,access_token,synthetic,True
+Can you improve this customer-management application? The customer email is sample.account@example.net. This is for a test project.,sensitive,mixed,email,synthetic,True
+Can you provide a practice problem involving database indexing?,safe,safe,none,synthetic,False
+Help me prepare for an interview about neural networks for my development environment.,safe,safe,none,synthetic,False
+How is Dijkstra's algorithm used in software development for a programming assignment.,safe,safe,none,synthetic,False
+Can you provide a practice problem involving REST architecture in a sample project.,safe,safe,none,synthetic,False
+Can you check the employee record associated with EMP-SAMPLE-3519?,sensitive,organizational,employee_id,synthetic,True
+What should a beginner know about recursion for an academic project.,safe,safe,none,synthetic,False
+Show me a simple example of Java programming.,safe,safe,none,synthetic,False
+"The customer lives at 25 Example Street, Pune. Can you include it in the example?",sensitive,pii,address,synthetic,True
+Can you analyze this login configuration? PASSWORD=DemoPass482!. Can you explain what is wrong?,sensitive,mixed,password,synthetic,True
+Please review this application configuration containing API_KEY=mock-api-482917. Please review the code.,sensitive,mixed,api_key,synthetic,True
+Can you provide a practice problem involving support vector machines for a programming assignment.,safe,safe,none,synthetic,False
+Please include this email in the form: training.user@example.com. Please process this information.,sensitive,pii,email,synthetic,True
+Give me a coding example related to machine learning in a local test environment.,safe,safe,none,synthetic,False
+What are the important concepts behind responsive web design?,safe,safe,none,synthetic,False
+Show me a simple example of Kruskal's algorithm for an academic project.,safe,safe,none,synthetic,False
+What are the real-world applications of classification algorithms in a sample project.,safe,safe,none,synthetic,False
+How would I implement HTTP requests in Python in a sample project.,safe,safe,none,synthetic,False
+"Please format this address correctly: 77 Test Avenue, Hyderabad. This is for a test application.",sensitive,pii,address,synthetic,True
+The banking form contains this account number: 456789123456. Please explain how to protect it.,sensitive,financial,account,synthetic,True
+Can you summarize the key concepts of REST APIs in a sample project.,safe,safe,none,synthetic,False
+Please organize this confidential internal system information. This is part of a test environment.,sensitive,organizational,confidential_information,synthetic,True
+Please validate this account number: 123456789012.,sensitive,financial,account,synthetic,True
+Can you teach me Git and GitHub with an example in a demo application.,safe,safe,none,synthetic,False
+Please review this application configuration containing API_KEY=mock-key-X9281.,sensitive,mixed,api_key,synthetic,True
+Give me some interview questions about Django for my development environment.,safe,safe,none,synthetic,False
+Can you provide a practice problem involving JavaScript?,safe,safe,none,synthetic,False
+The API request contains this credential: demo-api-key-83921. Can you explain what is wrong?,sensitive,credential,api_key,synthetic,True
+Can you validate this email address: demo.contact@example.org?,sensitive,pii,email,synthetic,True
+Please fix this contact form. The user's phone number is 8899776655. Can you help me troubleshoot this?,sensitive,mixed,phone,synthetic,True
+How is binary trees used in software development?,safe,safe,none,synthetic,False
+Please check this card number: 4012888888881881. This is synthetic test data.,sensitive,financial,card,synthetic,True
+Give me a beginner-friendly explanation of data preprocessing.,safe,safe,none,synthetic,False
+Give me some interview questions about Linux commands.,safe,safe,none,synthetic,False
+Can you debug this database connection: mysql://demo_user:MockLogin92#@localhost:3306/testdb?,sensitive,credential,database_credential,synthetic,True
+How can I practice Python programming effectively in a local test environment.,safe,safe,none,synthetic,False
+Can you summarize the key concepts of REST architecture?,safe,safe,none,synthetic,False
+The application sends this access token: sampleBearer8291.,sensitive,credential,access_token,synthetic,True
+The employee ID is EMP-DEMO-1024.,sensitive,organizational,employee_id,synthetic,True
+My account is registered with demo.student@example.com. Can you include it in the example?,sensitive,pii,email,synthetic,True
+How would I implement REST architecture in C++?,safe,safe,none,synthetic,False
+Help me debug this employee management system. Employee ID: EMP-TEST-2048. Can you explain what is wrong?,sensitive,mixed,employee_id,synthetic,True
+The account field contains 456789123456. Can you validate the format?,sensitive,financial,account,synthetic,True
+Please check this payment processing code using card number 6011111111111117. Can you explain what is wrong?,sensitive,mixed,card,synthetic,True
+How would I implement operating systems in Python in a local test environment.,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of Git and GitHub.,safe,safe,none,synthetic,False
+The user's phone number is 9876501234. This is for a test application.,sensitive,pii,phone,synthetic,True
+Help me understand JavaScript for a college project.,safe,safe,none,synthetic,False
+What are common mistakes when learning REST architecture?,safe,safe,none,synthetic,False
+"This is the delivery address: 12 Training Road, Coimbatore.",sensitive,pii,address,synthetic,True
+The application connects using postgresql://demo_user:DemoPass482!@localhost:5432/testdb.,sensitive,credential,database_credential,synthetic,True
+Please review this application configuration containing API_KEY=demo-key-482910. Can you help me troubleshoot this?,sensitive,mixed,api_key,synthetic,True
+Can you debug my Flask application? My API key is demo-api-key-83921. Can you explain what is wrong?,sensitive,mixed,api_key,synthetic,True
+My API key is test-api-918273.,sensitive,credential,api_key,synthetic,True
+What are the advantages and disadvantages of computer architecture for my development environment.,safe,safe,none,synthetic,False
+The account field contains 345678901234. This is for a test application.,sensitive,financial,account,synthetic,True
+Why is my login system failing? The password is DemoLogin82#. Please review the code.,sensitive,mixed,password,synthetic,True
+Can you give me a practical example of SQL joins for an academic project.,safe,safe,none,synthetic,False
+Can you validate this email address: example.student@example.org? Please check the format.,sensitive,pii,email,synthetic,True
+Explain the time complexity associated with Django in a prototype.,safe,safe,none,synthetic,False
+What should a beginner know about data preprocessing for a college project.,safe,safe,none,synthetic,False
+How does REST APIs work for my development environment.,safe,safe,none,synthetic,False
+How can I practice Kruskal's algorithm effectively?,safe,safe,none,synthetic,False
+Can you compare Dijkstra's algorithm with a related concept for my test application.,safe,safe,none,synthetic,False
+How does data preprocessing work in a local test environment.,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of computer architecture?,safe,safe,none,synthetic,False
+Can you provide notes about responsive web design for my test application.,safe,safe,none,synthetic,False
+How is Floyd Warshall algorithm used in software development in a local test environment.,safe,safe,none,synthetic,False
+Can you give me a practical example of sorting algorithms in a prototype.,safe,safe,none,synthetic,False
+The test application's password is ExamplePass321!. This is from my local environment.,sensitive,credential,password,synthetic,True
+What are common mistakes when learning database indexing for my test application.,safe,safe,none,synthetic,False
+Explain the time complexity associated with data preprocessing for my test application.,safe,safe,none,synthetic,False
+What should a beginner know about cloud computing for an academic project.,safe,safe,none,synthetic,False
+Can you compare deadlocks with a related concept in a prototype.,safe,safe,none,synthetic,False
+The demo bank account number is 456789123456. Please explain how to protect it.,sensitive,financial,account,synthetic,True
+Please debug my PostgreSQL connection. The database credential is postgresql://demo_user:DemoPass482!@localhost:5432/testdb. Can you explain what is wrong?,sensitive,mixed,database_credential,synthetic,True
+What should a beginner know about hash tables in a local test environment.,safe,safe,none,synthetic,False
+Help me understand neural networks.,safe,safe,none,synthetic,False
+Explain the time complexity associated with deadlocks in a demo application.,safe,safe,none,synthetic,False
+Please include this contact number: 9000012345.,sensitive,pii,phone,synthetic,True
+The application uses TestPassword731! as its test password.,sensitive,credential,password,synthetic,True
+Help me prepare for an interview about operating systems for my development environment.,safe,safe,none,synthetic,False
+Please review this database connection string: mongodb://demo:DemoPass92@localhost:27017/testdb.,sensitive,credential,database_credential,synthetic,True
+The user's phone number is 8765432109. Please check the format.,sensitive,pii,phone,synthetic,True
+"The user's address is 91 Mock Colony, Mumbai. Please process this information.",sensitive,pii,address,synthetic,True
+Can you provide a practice problem involving time complexity for a college project.,safe,safe,none,synthetic,False
+Can you check the private configuration used by our test system? Please keep this information private.,sensitive,organizational,private_configuration,synthetic,True
+Can you explain React step by step for my test application.,safe,safe,none,synthetic,False
+Can you compare dynamic programming with a related concept for a college project.,safe,safe,none,synthetic,False
+Can you provide a practice problem involving linear regression for my development environment.,safe,safe,none,synthetic,False
+Why is the internal development server unavailable? Please explain the configuration.,sensitive,organizational,internal_server,synthetic,True
+The application contains financial identifier 789012345678.,sensitive,financial,account,synthetic,True
+The user's phone number is 8800123456. This is for a test application.,sensitive,pii,phone,synthetic,True
+Please include this contact number: 9090901234.,sensitive,pii,phone,synthetic,True
+Explain time complexity in simple terms.,safe,safe,none,synthetic,False
+Can you debug this database connection: mongodb://demo:DemoPass92@localhost:27017/testdb? This is part of a development test.,sensitive,credential,database_credential,synthetic,True
+Can you debug my Flask application? My API key is demo-secret-key-7291.,sensitive,mixed,api_key,synthetic,True
+Can you review this account number: 234567890123? Can you validate the format?,sensitive,financial,account,synthetic,True
+What are the real-world applications of CSS Flexbox?,safe,safe,none,synthetic,False
+Can you review this account number: 789012345678? This is for a test application.,sensitive,financial,account,synthetic,True
+How is sorting algorithms used in software development?,safe,safe,none,synthetic,False
+My password is TestPassword731!.,sensitive,credential,password,synthetic,True
+How is computer architecture used in software development in a prototype.,safe,safe,none,synthetic,False
+Can you compare Java programming with a related concept?,safe,safe,none,synthetic,False
+Can you provide notes about Kruskal's algorithm for a programming assignment.,safe,safe,none,synthetic,False
+The demo account password is ExamplePass321!. Please identify the issue.,sensitive,credential,password,synthetic,True
+The payment form contains this test card number: 5555555555554444. This is for a test application.,sensitive,financial,card,synthetic,True
+Can you improve this customer-management application? The customer email is demo.account@example.com.,sensitive,mixed,email,synthetic,True
+Can you check the private configuration used by our test system? Please explain the configuration.,sensitive,organizational,private_configuration,synthetic,True
+Can you review this internal deployment configuration?,sensitive,organizational,private_configuration,synthetic,True
+Give me a beginner-friendly explanation of deadlocks in a sample project.,safe,safe,none,synthetic,False
+The demo user's mobile number is 8765432109. Please check the format.,sensitive,pii,phone,synthetic,True
+The payment form contains this test card number: 4012888888881881.,sensitive,financial,card,synthetic,True
+Can you check this API configuration containing demo-secret-key-7291?,sensitive,credential,api_key,synthetic,True
+Can you troubleshoot the internal server at 10.20.30.15? Can you help me document it?,sensitive,organizational,internal_server,synthetic,True
+Show me a simple example of Dijkstra's algorithm.,safe,safe,none,synthetic,False
+Can you summarize the key concepts of CSS Flexbox for an academic project.,safe,safe,none,synthetic,False
+Can you analyze this login configuration? PASSWORD=MockLogin92#. Can you explain what is wrong?,sensitive,mixed,password,synthetic,True
+Can you provide notes about JavaScript?,safe,safe,none,synthetic,False
+What are the real-world applications of support vector machines in a demo application.,safe,safe,none,synthetic,False
+Can you provide a practice problem involving graph algorithms for my development environment.,safe,safe,none,synthetic,False
+Can you provide a practice problem involving Python programming while learning software development.,safe,safe,none,synthetic,False
+Can you improve this payment application? The test card number is 4111111111111111. Please review the code.,sensitive,mixed,card,synthetic,True
+The demo payment system uses card number 378282246310005. Can you help me process this?,sensitive,financial,card,synthetic,True
+Please troubleshoot authentication with test_access_token_7291. This is from my local environment.,sensitive,credential,access_token,synthetic,True
+What are the real-world applications of Python programming for an academic project.,safe,safe,none,synthetic,False
+What are the real-world applications of Kruskal's algorithm?,safe,safe,none,synthetic,False
+My test card number is 378282246310005. Please explain how to protect it.,sensitive,financial,card,synthetic,True
+Can you explain cloud computing step by step for my test application.,safe,safe,none,synthetic,False
+The demo application uses access token mock_access_7192.,sensitive,credential,access_token,synthetic,True
+Please review our private server configuration. Can you help me document it?,sensitive,organizational,internal_server,synthetic,True
+Please review this database connection string: postgresql://demo_user:DemoPass482!@localhost:5432/testdb.,sensitive,credential,database_credential,synthetic,True
+Help me understand neural networks in a prototype.,safe,safe,none,synthetic,False
+Can you analyze this login configuration? PASSWORD=ExamplePass321!. Can you explain what is wrong?,sensitive,mixed,password,synthetic,True
+Can you compare CSS Flexbox with a related concept?,safe,safe,none,synthetic,False
+Can you check the formatting of account number 987654321098? This is for a test application.,sensitive,financial,account,synthetic,True
+Can you explain hash tables step by step in a prototype.,safe,safe,none,synthetic,False
+Can you validate this phone number: 8765432109?,sensitive,pii,phone,synthetic,True
+The demo payment system uses card number 4012888888881881.,sensitive,financial,card,synthetic,True
+How would I implement graph algorithms in Python?,safe,safe,none,synthetic,False
+Can you help process employee identifier EMP-SAMPLE-3519?,sensitive,organizational,employee_id,synthetic,True
+Can you debug my Flask application? My API key is mock-key-X9281.,sensitive,mixed,api_key,synthetic,True
+Please add 9988776655 to the contact form.,sensitive,pii,phone,synthetic,True
+Can you improve this payment application? The test card number is 378282246310005.,sensitive,mixed,card,synthetic,True
+My phone number is 9090901234.,sensitive,pii,phone,synthetic,True
+Help me understand software testing.,safe,safe,none,synthetic,False
+This test transaction uses card number 4111111111111111. Please explain how to protect it.,sensitive,financial,card,synthetic,True
+Please include this email in the form: test.user@example.org. Please check the format.,sensitive,pii,email,synthetic,True
+Help me understand hash tables in a local test environment.,safe,safe,none,synthetic,False
+Why is the internal development server unavailable? Can you help me document it?,sensitive,organizational,internal_server,synthetic,True
+How would I implement binary search in C++ while learning software development.,safe,safe,none,synthetic,False
+"Please use this address in the delivery form: 55 Example Avenue, Delhi. Please check the format.",sensitive,pii,address,synthetic,True
+Why is authentication failing with this API key: mock-key-X9281?,sensitive,credential,api_key,synthetic,True
+Why is the internal development server unavailable? This is for internal documentation.,sensitive,organizational,internal_server,synthetic,True
+Please check this test banking value: 789012345678.,sensitive,financial,account,synthetic,True
+Can you compare React with a related concept?,safe,safe,none,synthetic,False
+How would I implement virtual memory in Python while learning software development.,safe,safe,none,synthetic,False
+Why is this access token not working: testToken92831?,sensitive,credential,access_token,synthetic,True
+Please check this authentication token: mock_access_7192.,sensitive,credential,access_token,synthetic,True
+This information belongs to an internal company project. Please explain the configuration.,sensitive,organizational,confidential_information,synthetic,True
+Can you analyze this login configuration? PASSWORD=TestingPass902$.,sensitive,mixed,password,synthetic,True
+Can you summarize the key concepts of classification algorithms while learning software development.,safe,safe,none,synthetic,False
+Please check this card number: 4000000000000002.,sensitive,financial,card,synthetic,True
+Show me a simple example of Python programming.,safe,safe,none,synthetic,False
+Can you improve this customer-management application? The customer email is sample.person@example.net.,sensitive,mixed,email,synthetic,True
+Can you diagnose connectivity to the internal server?,sensitive,organizational,internal_server,synthetic,True
+Can you provide notes about REST APIs?,safe,safe,none,synthetic,False
+Can you teach me database normalization with an example for a college project.,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of object oriented programming.,safe,safe,none,synthetic,False
+Explain Java programming in simple terms in a sample project.,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of linked lists for my development environment.,safe,safe,none,synthetic,False
+What are the important concepts behind REST architecture?,safe,safe,none,synthetic,False
+What are the real-world applications of REST APIs?,safe,safe,none,synthetic,False
+"Can you refactor this customer application while preserving the address 18 Sample Road, Bengaluru?",sensitive,mixed,address,synthetic,True
+How is process scheduling used in software development in a prototype.,safe,safe,none,synthetic,False
+Help me prepare for an interview about graph algorithms.,safe,safe,none,synthetic,False
+Can you compare machine learning with a related concept in a prototype.,safe,safe,none,synthetic,False
+The application contains financial identifier 234567890123.,sensitive,financial,account,synthetic,True
+Please validate this account number: 234567890123.,sensitive,financial,account,synthetic,True
+Please help me redact this card number: 6011111111111117.,sensitive,financial,card,synthetic,True
+Can you compare CSS Flexbox with a related concept for a programming assignment.,safe,safe,none,synthetic,False
+Please add 8899776655 to the contact form.,sensitive,pii,phone,synthetic,True
+Can you summarize the key concepts of Kruskal's algorithm for my test application.,safe,safe,none,synthetic,False
+How can I practice sorting algorithms effectively in a demo application.,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of Django for an academic project.,safe,safe,none,synthetic,False
+Please check this test banking value: 345678901234.,sensitive,financial,account,synthetic,True
+Can you explain HTTP requests step by step?,safe,safe,none,synthetic,False
+Please add sample.account@example.net to the contact information.,sensitive,pii,email,synthetic,True
+The user's phone number is 8899776655.,sensitive,pii,phone,synthetic,True
+Can you compare C++ programming with a related concept while learning software development.,safe,safe,none,synthetic,False
+The test application contains this database credential: mysql://demo_user:MockLogin92#@localhost:3306/testdb.,sensitive,credential,database_credential,synthetic,True
+Can you summarize the key concepts of computer networks for a programming assignment.,safe,safe,none,synthetic,False
+Can you debug my Flask application? My API key is demo-api-key-83921.,sensitive,mixed,api_key,synthetic,True
+Give me a coding example related to FastAPI.,safe,safe,none,synthetic,False
+How would I implement cloud computing in Python for my test application.,safe,safe,none,synthetic,False
+Why is this access token not working: demoToken_X821? Can you explain what is wrong?,sensitive,credential,access_token,synthetic,True
+Please check this card number: 5555555555554444. This is for a test application.,sensitive,financial,card,synthetic,True
+Can you explain hash tables step by step in a sample project.,safe,safe,none,synthetic,False
+Please fix this contact form. The user's phone number is 8765432109. Can you help me identify the issue?,sensitive,mixed,phone,synthetic,True
+What are the important concepts behind Dijkstra's algorithm?,safe,safe,none,synthetic,False
+Our internal application uses employee ID EMP-TEST-2048. This is part of a test environment.,sensitive,organizational,employee_id,synthetic,True
+Can you review this internal deployment configuration? This is for internal documentation.,sensitive,organizational,private_configuration,synthetic,True
+The application connects using mongodb://test:ExamplePass321!@localhost:27017/demo. This is from my local environment.,sensitive,credential,database_credential,synthetic,True
+This test transaction uses card number 378282246310005. This is for a test application.,sensitive,financial,card,synthetic,True
+What are the real-world applications of database normalization for a programming assignment.,safe,safe,none,synthetic,False
+I am debugging an API request that uses demo-secret-key-7291. Please identify the issue.,sensitive,credential,api_key,synthetic,True
+The test application's password is TestingPass902$. This is from my local environment.,sensitive,credential,password,synthetic,True
+Please debug my PostgreSQL connection. The database credential is mongodb://demo:DemoPass92@localhost:27017/testdb. This is for a test project.,sensitive,mixed,database_credential,synthetic,True
+My phone number is 9090901234. Please check the format.,sensitive,pii,phone,synthetic,True
+What should a beginner know about dynamic programming while learning software development.,safe,safe,none,synthetic,False
+Give me some interview questions about neural networks in a sample project.,safe,safe,none,synthetic,False
+This confidential company project is called Project Aurora. Please keep this information private.,sensitive,organizational,confidential_information,synthetic,True
+Please review the configuration of our internal application.,sensitive,organizational,private_configuration,synthetic,True
+Can you provide a practice problem involving time complexity?,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of support vector machines for my development environment.,safe,safe,none,synthetic,False
+Please check this payment processing code using card number 4000000000000002. Can you help me identify the issue?,sensitive,mixed,card,synthetic,True
+Why does login fail with password MockPassword55!?,sensitive,credential,password,synthetic,True
+Can you improve this payment application? The test card number is 5555555555554444. Please review the code.,sensitive,mixed,card,synthetic,True
+How would I implement computer architecture in Python for an academic project.,safe,safe,none,synthetic,False
+Please include this email in the form: test.contact@example.net. Please process this information.,sensitive,pii,email,synthetic,True
+"Please include this address: 55 Example Avenue, Delhi.",sensitive,pii,address,synthetic,True
+What are the important concepts behind CSS Flexbox in a local test environment.,safe,safe,none,synthetic,False
+Can you debug authentication using this password: ExamplePass321!? Please identify the issue.,sensitive,credential,password,synthetic,True
+Why is my login system failing? The password is DemoSecure44!.,sensitive,mixed,password,synthetic,True
+Why is this access token not working: test_access_token_7291? This is part of a development test.,sensitive,credential,access_token,synthetic,True
+Can you explain this internal configuration setup? Can you help me document it?,sensitive,organizational,private_configuration,synthetic,True
+What are the important concepts behind linear regression in a demo application.,safe,safe,none,synthetic,False
+Can you explain this internal configuration setup?,sensitive,organizational,private_configuration,synthetic,True
+Give me a beginner-friendly explanation of JavaScript in a sample project.,safe,safe,none,synthetic,False
+This is the user's contact number: 9090901234. This is for a test application.,sensitive,pii,phone,synthetic,True
+The demo user's mobile number is 8800123456. Can you help me format this?,sensitive,pii,phone,synthetic,True
+Can you explain Floyd Warshall algorithm step by step in a sample project.,safe,safe,none,synthetic,False
+Give me some interview questions about Django for my test application.,safe,safe,none,synthetic,False
+How would I implement graph algorithms in Python for an academic project.,safe,safe,none,synthetic,False
+What should a beginner know about version control in a demo application.,safe,safe,none,synthetic,False
+Give me some interview questions about operating systems in a sample project.,safe,safe,none,synthetic,False
+My API key is sk-test-A7B82C91D4. This is part of a development test.,sensitive,credential,api_key,synthetic,True
+My test account number is 123456789012. Can you help me process this?,sensitive,financial,account,synthetic,True
+My account is registered with sample.person@example.net.,sensitive,pii,email,synthetic,True
+Can you compare support vector machines with a related concept?,safe,safe,none,synthetic,False
+How can I practice FastAPI effectively?,safe,safe,none,synthetic,False
+How would I implement machine learning in Python?,safe,safe,none,synthetic,False
+"Please include this address: 31 Demo Lane, Kochi. Please check the format.",sensitive,pii,address,synthetic,True
+What are common mistakes when learning sorting algorithms in a demo application.,safe,safe,none,synthetic,False
+Help me prepare for an interview about Django.,safe,safe,none,synthetic,False
+"The user's address is 42 Demo Street, Chennai.",sensitive,pii,address,synthetic,True
+Can you help organize the private deployment settings?,sensitive,organizational,private_configuration,synthetic,True
+What are the real-world applications of data structures?,safe,safe,none,synthetic,False
+What are the important concepts behind linked lists in a local test environment.,safe,safe,none,synthetic,False
+What are common mistakes when learning FastAPI in a local test environment.,safe,safe,none,synthetic,False
+How would I implement responsive web design in C++?,safe,safe,none,synthetic,False
+Our internal application uses employee ID EMP-SAMPLE-3519. This is part of a test environment.,sensitive,organizational,employee_id,synthetic,True
+What are the real-world applications of Django in a prototype.,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of Linux commands?,safe,safe,none,synthetic,False
+Can you help document this private company project?,sensitive,organizational,confidential_information,synthetic,True
+Please add 9876501234 to the contact form.,sensitive,pii,phone,synthetic,True
+How would I implement database indexing in C++?,safe,safe,none,synthetic,False
+Please add example.student@example.org to the contact information. This is for a test application.,sensitive,pii,email,synthetic,True
+How would I implement deadlocks in C++ for my development environment.,safe,safe,none,synthetic,False
+How would I implement neural networks in Python?,safe,safe,none,synthetic,False
+How can I practice database normalization effectively?,safe,safe,none,synthetic,False
+How would I implement time complexity in C++ in a sample project.,safe,safe,none,synthetic,False
+How can I practice page replacement algorithms effectively?,safe,safe,none,synthetic,False
+My phone number is 9012345678. Can you help me format this?,sensitive,pii,phone,synthetic,True
+Please check this card number: 3566002020360505.,sensitive,financial,card,synthetic,True
+Give me a coding example related to version control for my development environment.,safe,safe,none,synthetic,False
+How would I implement Docker in C++?,safe,safe,none,synthetic,False
+The user's phone number is 9000012345. Can you include it in the example?,sensitive,pii,phone,synthetic,True
+Can you troubleshoot the internal server at 10.20.30.15? This is for internal documentation.,sensitive,organizational,internal_server,synthetic,True
+How would I implement cloud computing in Python in a prototype.,safe,safe,none,synthetic,False
+The employee ID is EMP-DEMO-7284. This is part of a test environment.,sensitive,organizational,employee_id,synthetic,True
+"Can you validate this address: 91 Mock Colony, Mumbai? This is for a test application.",sensitive,pii,address,synthetic,True
+How is decision trees used in software development in a sample project.,safe,safe,none,synthetic,False
+Why is authentication failing with this API key: demo-key-482910?,sensitive,credential,api_key,synthetic,True
+How would I implement web development in Python?,safe,safe,none,synthetic,False
+Can you provide notes about sorting algorithms for a programming assignment.,safe,safe,none,synthetic,False
+Please review these database credentials: mysql://test_user:MockPass731@localhost:3306/sampledb. This is from my local environment.,sensitive,credential,database_credential,synthetic,True
+Can you validate this phone number: 9345678123?,sensitive,pii,phone,synthetic,True
+Can you format this confidential project information for internal documentation? Can you help me document it?,sensitive,organizational,confidential_information,synthetic,True
+I need to add employee EMP-DEV-4921 to the internal database. Please keep this information private.,sensitive,organizational,employee_id,synthetic,True
+What are the advantages and disadvantages of SQL joins?,safe,safe,none,synthetic,False
+Why is my login system failing? The password is TestSecure719@. Please review the code.,sensitive,mixed,password,synthetic,True
+Can you debug authentication using this password: DemoLogin82#?,sensitive,credential,password,synthetic,True
+This development environment contains mysql://test_user:MockPass731@localhost:3306/sampledb.,sensitive,credential,database_credential,synthetic,True
+I am debugging an API request that uses demo-api-key-83921. This is from my local environment.,sensitive,credential,api_key,synthetic,True
+How does Java programming work?,safe,safe,none,synthetic,False
+Give me a coding example related to database indexing while learning software development.,safe,safe,none,synthetic,False
+Can you give me a practical example of Java programming in a prototype.,safe,safe,none,synthetic,False
+Help me debug this employee management system. Employee ID: STAFF-TEST-5832. Can you help me troubleshoot this?,sensitive,mixed,employee_id,synthetic,True
+Why does this database connection fail: mysql://demo_user:MockLogin92#@localhost:3306/testdb?,sensitive,credential,database_credential,synthetic,True
+How would I implement sorting algorithms in C++ for my test application.,safe,safe,none,synthetic,False
+What are the important concepts behind computer networks in a sample project.,safe,safe,none,synthetic,False
+Can you troubleshoot the following connection string: postgresql://sample:TestPass821@localhost:5432/sampledb? This is from my local environment.,sensitive,credential,database_credential,synthetic,True
+The application contains financial identifier 987654321098.,sensitive,financial,account,synthetic,True
+Can you check the formatting of account number 789012345678?,sensitive,financial,account,synthetic,True
+The user's email address is mock.user@example.com. Can you include it in the example?,sensitive,pii,email,synthetic,True
+The customer can be reached at 9988776655. Can you help me format this?,sensitive,pii,phone,synthetic,True
+How would I implement computer architecture in C++ for a college project.,safe,safe,none,synthetic,False
+The application connects to internal server DEV-SERVER-07.,sensitive,organizational,internal_server,synthetic,True
+My password is TestingPass902$.,sensitive,credential,password,synthetic,True
+Can you explain cloud computing step by step?,safe,safe,none,synthetic,False
+"The demo user's address is 31 Demo Lane, Kochi. Can you help me format this?",sensitive,pii,address,synthetic,True
+The application contains financial identifier 456789123456.,sensitive,financial,account,synthetic,True
+This is the user's contact number: 8899776655. This is for a test application.,sensitive,pii,phone,synthetic,True
+Can you review this account number: 112233445566?,sensitive,financial,account,synthetic,True
+Please check this card number: 378282246310005. This is for a test application.,sensitive,financial,card,synthetic,True
+The user's phone number is 9090901234.,sensitive,pii,phone,synthetic,True
+Please fix this contact form. The user's phone number is 8765432109.,sensitive,mixed,phone,synthetic,True
+Our internal application uses employee ID EMP-TEST-2048. Can you help me document it?,sensitive,organizational,employee_id,synthetic,True
+The account field contains 456789123456. Can you help me process this?,sensitive,financial,account,synthetic,True
+Can you provide a practice problem involving page replacement algorithms while learning software development.,safe,safe,none,synthetic,False
+Explain machine learning in simple terms.,safe,safe,none,synthetic,False
+My API key is test_key_X92K71. Can you explain what is wrong?,sensitive,credential,api_key,synthetic,True
+What should a beginner know about Kruskal's algorithm for a college project.,safe,safe,none,synthetic,False
+What are common mistakes when learning REST APIs for an academic project.,safe,safe,none,synthetic,False
+What are the important concepts behind cloud computing for an academic project.,safe,safe,none,synthetic,False
+What are common mistakes when learning linked lists?,safe,safe,none,synthetic,False
+Can you provide notes about support vector machines for an academic project.,safe,safe,none,synthetic,False
+Help me debug this employee management system. Employee ID: STAFF-TEST-5832. Can you explain what is wrong?,sensitive,mixed,employee_id,synthetic,True
+Help me debug this employee management system. Employee ID: STAFF-DEV-6241. Please suggest a solution.,sensitive,mixed,employee_id,synthetic,True
+Can you summarize the key concepts of Python programming for a college project.,safe,safe,none,synthetic,False
+Can you improve this REST API? The access token is testToken92831. Can you help me identify the issue?,sensitive,mixed,access_token,synthetic,True
+How would I implement neural networks in C++?,safe,safe,none,synthetic,False
+Can you improve this payment application? The test card number is 4000000000000002.,sensitive,mixed,card,synthetic,True
+The payment form contains this test card number: 378282246310005. Can you help me process this?,sensitive,financial,card,synthetic,True
+Can you review this internal deployment configuration? This is part of a test environment.,sensitive,organizational,private_configuration,synthetic,True
+Can you improve this customer-management application? The customer email is training.user@example.com. This is for a test project.,sensitive,mixed,email,synthetic,True
+Please help me protect this financial identifier: 123456789012. This is for a test application.,sensitive,financial,account,synthetic,True
+Please prepare an internal summary of this confidential system. Please keep this information private.,sensitive,organizational,confidential_information,synthetic,True
+Can you summarize the key concepts of software testing for a programming assignment.,safe,safe,none,synthetic,False
+Please review these database credentials: postgresql://demo_user:DemoPass482!@localhost:5432/testdb. Can you help me debug the problem?,sensitive,credential,database_credential,synthetic,True
+What are the important concepts behind HTTP requests?,safe,safe,none,synthetic,False
+The card field contains the following number: 378282246310005.,sensitive,financial,card,synthetic,True
+Can you teach me time complexity with an example for a college project.,safe,safe,none,synthetic,False
+Why does this database connection fail: postgresql://demo_user:DemoPass482!@localhost:5432/testdb?,sensitive,credential,database_credential,synthetic,True
+Help me understand Python programming.,safe,safe,none,synthetic,False
+Help me prepare for an interview about classification algorithms in a demo application.,safe,safe,none,synthetic,False
+The test service uses the following API key: demo-api-key-83921. This is part of a development test.,sensitive,credential,api_key,synthetic,True
+"The application contains this address: 28 Test Road, Ahmedabad. Please check the format.",sensitive,pii,address,synthetic,True
+Please review the configuration of our internal application. Please keep this information private.,sensitive,organizational,private_configuration,synthetic,True
+How can I practice HTTP requests effectively in a sample project.,safe,safe,none,synthetic,False
+I am debugging an API request that uses test_key_X92K71.,sensitive,credential,api_key,synthetic,True
+Please fix this contact form. The user's phone number is 9090901234. This is for a test project.,sensitive,mixed,phone,synthetic,True
+Explain dynamic programming in simple terms.,safe,safe,none,synthetic,False
+How would I implement linked lists in C++ for my test application.,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of hash tables while learning software development.,safe,safe,none,synthetic,False
+Can you explain this internal configuration setup? Please explain the configuration.,sensitive,organizational,private_configuration,synthetic,True
+Can you improve this payment application? The test card number is 4111111111111111. This is from a development environment.,sensitive,mixed,card,synthetic,True
+Help me understand graph algorithms while learning software development.,safe,safe,none,synthetic,False
+The account field contains 567890123456. Please explain how to protect it.,sensitive,financial,account,synthetic,True
+The account field contains 987654321098. This is synthetic test data.,sensitive,financial,account,synthetic,True
+What are the advantages and disadvantages of database indexing while learning software development.,safe,safe,none,synthetic,False
+Help me understand object oriented programming.,safe,safe,none,synthetic,False
+What should a beginner know about graph algorithms?,safe,safe,none,synthetic,False
+Please review this internal server configuration. Please keep this information private.,sensitive,organizational,internal_server,synthetic,True
+Please debug my PostgreSQL connection. The database credential is mysql://test_user:MockPass731@localhost:3306/sampledb. Please review the code.,sensitive,mixed,database_credential,synthetic,True
+My password is MockLogin92#. This is from my local environment.,sensitive,credential,password,synthetic,True
+Can you give me a practical example of sorting algorithms for an academic project.,safe,safe,none,synthetic,False
+Can you check the employee record associated with STAFF-DEMO-3812? Can you help me document it?,sensitive,organizational,employee_id,synthetic,True
+Can you explain deadlocks step by step in a demo application.,safe,safe,none,synthetic,False
+Please check the private environment configuration. This is part of a test environment.,sensitive,organizational,private_configuration,synthetic,True
+The demo payment system uses card number 3566002020360505.,sensitive,financial,card,synthetic,True
+How does page replacement algorithms work?,safe,safe,none,synthetic,False
+Please include employee identifier EMP-DEMO-1024 in the internal report. Please keep this information private.,sensitive,organizational,employee_id,synthetic,True
+Can you provide notes about data preprocessing in a sample project.,safe,safe,none,synthetic,False
+What are common mistakes when learning virtual memory?,safe,safe,none,synthetic,False
+Can you analyze this login configuration? PASSWORD=TestSecure719@. This is for a test project.,sensitive,mixed,password,synthetic,True
+Can you teach me web development with an example?,safe,safe,none,synthetic,False
+Show me a simple example of database normalization.,safe,safe,none,synthetic,False
+Give me some interview questions about SQL joins for a programming assignment.,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of Django for a programming assignment.,safe,safe,none,synthetic,False
+Give me a coding example related to Django.,safe,safe,none,synthetic,False
+Please review our private server configuration.,sensitive,organizational,internal_server,synthetic,True
+How would I implement decision trees in C++ in a local test environment.,safe,safe,none,synthetic,False
+What should a beginner know about Dijkstra's algorithm in a sample project.,safe,safe,none,synthetic,False
+Please check this card number: 378282246310005.,sensitive,financial,card,synthetic,True
+Can you format this confidential project information for internal documentation? This is part of a test environment.,sensitive,organizational,confidential_information,synthetic,True
+Help me prepare for an interview about JavaScript.,safe,safe,none,synthetic,False
+My password is DemoPass482!.,sensitive,credential,password,synthetic,True
+Please check this payment processing code using card number 4111111111111111. Please review the code.,sensitive,mixed,card,synthetic,True
