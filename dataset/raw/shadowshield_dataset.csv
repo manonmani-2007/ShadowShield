@@ -1,0 +1,584 @@
+text,label,category,subcategory,source_type,contains_sensitive
+How would I implement binary trees in C++?,safe,safe,none,synthetic,False
+Show me a simple example of Docker.,safe,safe,none,synthetic,False
+How would I implement Docker in Python?,safe,safe,none,synthetic,False
+Explain the real-world applications of Git and GitHub.,safe,safe,none,synthetic,False
+Can you improve this REST API code? The test token is demo_token_83A91X.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+The employee ID is EMP-SAMPLE-7741. Please include it in the internal report.,sensitive,organizational,internal_server,synthetic,True
+Explain why this API request fails. The API key being used is TestPassword731!.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Please review this code and make it more efficient. The database credentials are mock.user@example.org.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+The demo account number is 123456789012. Please format it for the application.,sensitive,financial,account,synthetic,True
+Explain the real-world applications of cloud computing.,safe,safe,none,synthetic,False
+My contact email is 8899776655. Please format this message professionally.,sensitive,pii,phone,synthetic,True
+Help me debug this employee management application. Employee ID: test_key_X92K71.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+I am testing a payment form with this card number: 4111111111111111.,sensitive,financial,card,synthetic,True
+Can you write unit tests for this authentication function? The demo token is EMP-SAMPLE-7741.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Give me some practice questions about sorting algorithms.,safe,safe,none,synthetic,False
+Please save my contact number 9876501234 in this configuration example.,sensitive,pii,email,synthetic,True
+Please check this configuration. API_KEY=DemoPass482!,sensitive,credential,access_token,synthetic,True
+Can you help me debug a basic example involving Git and GitHub?,safe,safe,none,synthetic,False
+The internal server is running at 10.20.30.15. Can you help diagnose the connection?,sensitive,organizational,private_configuration,synthetic,True
+Can you help me debug a basic example involving process scheduling?,safe,safe,none,synthetic,False
+Can you write unit tests for this authentication function? The demo token is 9876501234.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Explain object oriented programming in simple terms.,safe,safe,none,synthetic,False
+Can you explain the time complexity of Docker?,safe,safe,none,synthetic,False
+This is a synthetic banking identifier for my test application: 4111111111111111.,sensitive,financial,account,synthetic,True
+How does C++ programming work?,safe,safe,none,synthetic,False
+Please review this code and make it more efficient. The database credentials are demo-secret-key-7291.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Explain the real-world applications of Linux commands.,safe,safe,none,synthetic,False
+The demo user's address is test.user@example.org. Can you format it correctly?,sensitive,pii,phone,synthetic,True
+Give me some practice questions about database normalization.,safe,safe,none,synthetic,False
+"My phone number is 91 Mock Colony, Mumbai. Can you include it in the form?",sensitive,pii,phone,synthetic,True
+What are common mistakes when learning Docker?,safe,safe,none,synthetic,False
+Can you help me redact this financial identifier: 5555555555554444?,sensitive,financial,card,synthetic,True
+Can you generate a delivery form using this address: 9123405678?,sensitive,pii,phone,synthetic,True
+Explain the real-world applications of hash tables.,safe,safe,none,synthetic,False
+Our internal test environment uses server DEV-SERVER-07. Can you explain the configuration?,sensitive,organizational,private_configuration,synthetic,True
+This confidential company project is called Project Aurora. Help me draft an internal summary.,sensitive,organizational,confidential_information,synthetic,True
+"Can you generate a delivery form using this address: 91 Mock Colony, Mumbai?",sensitive,pii,address,synthetic,True
+The demo account number is 4111111111111111. Please format it for the application.,sensitive,financial,card,synthetic,True
+What are the advantages and disadvantages of machine learning?,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of object oriented programming?,safe,safe,none,synthetic,False
+Can you help me redact this financial identifier: 4111111111111111?,sensitive,financial,account,synthetic,True
+Give me a beginner-friendly explanation of Python programming.,safe,safe,none,synthetic,False
+Why does this database connection fail? demo-api-key-83921,sensitive,credential,access_token,synthetic,True
+Can you format this internal employee identifier: STAFF-DEMO-3812?,sensitive,organizational,internal_server,synthetic,True
+Can you help me debug a basic example involving Linux commands?,safe,safe,none,synthetic,False
+Can you debug this authentication code? The access token is test_key_X92K71.,sensitive,credential,access_token,synthetic,True
+Explain the real-world applications of data structures.,safe,safe,none,synthetic,False
+Can you explain the time complexity of binary trees?,safe,safe,none,synthetic,False
+How does Linux commands work?,safe,safe,none,synthetic,False
+Explain virtual memory in simple terms.,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of classification algorithms?,safe,safe,none,synthetic,False
+Can you help me redact this financial identifier: 456789123456?,sensitive,financial,account,synthetic,True
+How should an application protect account information such as 112233445566?,sensitive,financial,card,synthetic,True
+Please save my contact number 9000012345 in this configuration example.,sensitive,pii,phone,synthetic,True
+Show me a simple example of computer networks.,safe,safe,none,synthetic,False
+Please check this configuration. API_KEY=DemoSecure44!,sensitive,credential,api_key,synthetic,True
+How would I implement Java programming in C++?,safe,safe,none,synthetic,False
+"My contact email is 18 Sample Road, Bengaluru. Please format this message professionally.",sensitive,pii,email,synthetic,True
+The login password in my test configuration is sk-test-A7B82C91D4.,sensitive,credential,password,synthetic,True
+Help me understand binary trees.,safe,safe,none,synthetic,False
+Can you explain the time complexity of Java programming?,safe,safe,none,synthetic,False
+What are common mistakes when learning linked lists?,safe,safe,none,synthetic,False
+The demo user's address is sample.account@example.net. Can you format it correctly?,sensitive,pii,address,synthetic,True
+The employee ID is STAFF-DEMO-3812. Please include it in the internal report.,sensitive,organizational,confidential_information,synthetic,True
+Please check whether this card number is formatted correctly: 4111111111111111.,sensitive,financial,account,synthetic,True
+Help me understand linear regression.,safe,safe,none,synthetic,False
+Can you teach me Git and GitHub with an example?,safe,safe,none,synthetic,False
+The customer's email address is test.user@example.org. Please draft a confirmation message.,sensitive,pii,email,synthetic,True
+Please review this connection string: TestPassword731!,sensitive,credential,access_token,synthetic,True
+Can you teach me binary trees with an example?,safe,safe,none,synthetic,False
+The private configuration contains INTERNAL_DB_HOST=dev-db-01.,sensitive,organizational,internal_server,synthetic,True
+The API uses this key: mock-api-482917. Why is my request failing?,sensitive,credential,password,synthetic,True
+Explain linear regression in simple terms.,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of computer networks.,safe,safe,none,synthetic,False
+Can you explain the time complexity of computer networks?,safe,safe,none,synthetic,False
+Show me a simple example of linear regression.,safe,safe,none,synthetic,False
+Here is the token used by my test application: postgresql://demo_user:DemoPass482!@localhost:5432/testdb.,sensitive,credential,api_key,synthetic,True
+Give me some practice questions about object oriented programming.,safe,safe,none,synthetic,False
+Can you format this internal employee identifier: EMP-TEST-2048?,sensitive,organizational,confidential_information,synthetic,True
+Give me a beginner-friendly explanation of Java programming.,safe,safe,none,synthetic,False
+Compare linked lists with another similar concept.,safe,safe,none,synthetic,False
+"Please save my contact number 25 Example Street, Pune in this configuration example.",sensitive,pii,address,synthetic,True
+How does data structures work?,safe,safe,none,synthetic,False
+Help me debug this employee management application. Employee ID: DemoPass482!.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you explain the time complexity of HTTP requests?,safe,safe,none,synthetic,False
+How does HTTP requests work?,safe,safe,none,synthetic,False
+The API uses this key: DemoSecure44!. Why is my request failing?,sensitive,credential,database_credential,synthetic,True
+What are the advantages and disadvantages of hash tables?,safe,safe,none,synthetic,False
+What are common mistakes when learning recursion?,safe,safe,none,synthetic,False
+What are common mistakes when learning Linux commands?,safe,safe,none,synthetic,False
+Can you explain how a system should securely handle this account number: 456789123456?,sensitive,financial,account,synthetic,True
+Give me some practice questions about Linux commands.,safe,safe,none,synthetic,False
+Please check the validation logic for this test card: 123456789012.,sensitive,financial,account,synthetic,True
+How does process scheduling work?,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of binary trees?,safe,safe,none,synthetic,False
+How should an application protect account information such as 987654321098?,sensitive,financial,account,synthetic,True
+I am testing a payment form with this card number: 5555555555554444.,sensitive,financial,account,synthetic,True
+What are common mistakes when learning cloud computing?,safe,safe,none,synthetic,False
+Can you help me debug a basic example involving binary trees?,safe,safe,none,synthetic,False
+Explain the real-world applications of machine learning.,safe,safe,none,synthetic,False
+Help me understand classification algorithms.,safe,safe,none,synthetic,False
+Can you help me debug a basic example involving computer networks?,safe,safe,none,synthetic,False
+How does Java programming work?,safe,safe,none,synthetic,False
+Our internal server address is 10.10.20.25. Why might the service be unavailable?,sensitive,organizational,internal_server,synthetic,True
+The internal service endpoint is http://internal-demo.local/api. Can you debug the request?,sensitive,organizational,confidential_information,synthetic,True
+How does sorting algorithms work?,safe,safe,none,synthetic,False
+The customer's email address is sample.account@example.net. Please draft a confirmation message.,sensitive,pii,email,synthetic,True
+"Please save my contact number 18 Sample Road, Bengaluru in this configuration example.",sensitive,pii,email,synthetic,True
+The application configuration contains PASSWORD=mysql://test_user:MockPass731@localhost:3306/sampledb. Can you debug it?,sensitive,credential,password,synthetic,True
+Explain computer networks in simple terms.,safe,safe,none,synthetic,False
+Can you help review this internal deployment configuration?,sensitive,organizational,private_configuration,synthetic,True
+Can you improve this payment form? The test card number is mongodb://demo:DemoPass92@localhost:27017/testdb.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+How does classification algorithms work?,safe,safe,none,synthetic,False
+How would I implement REST APIs in Python?,safe,safe,none,synthetic,False
+Can you format this internal employee identifier: EMP-DEMO-1024?,sensitive,organizational,employee_id,synthetic,True
+Help me understand Git and GitHub.,safe,safe,none,synthetic,False
+How would I implement REST APIs in C++?,safe,safe,none,synthetic,False
+Please review this connection string: SamplePwd821@,sensitive,credential,access_token,synthetic,True
+Explain the real-world applications of Python programming.,safe,safe,none,synthetic,False
+Can you help me debug a basic example involving linked lists?,safe,safe,none,synthetic,False
+Explain why this API request fails. The API key being used is EMP-DEMO-1024.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Help me understand operating systems.,safe,safe,none,synthetic,False
+Explain linked lists in simple terms.,safe,safe,none,synthetic,False
+Can you explain the time complexity of C++ programming?,safe,safe,none,synthetic,False
+Can you review this login code? The password is DemoSecure44!.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+What are the advantages and disadvantages of Linux commands?,safe,safe,none,synthetic,False
+My phone number is mock.user@example.org. Can you include it in the form?,sensitive,pii,email,synthetic,True
+Help me debug this employee management application. Employee ID: 9123405678.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Give me a beginner-friendly explanation of process scheduling.,safe,safe,none,synthetic,False
+The API uses this key: postgresql://demo_user:DemoPass482!@localhost:5432/testdb. Why is my request failing?,sensitive,credential,api_key,synthetic,True
+Can you help me identify the correct field for this account number: 5555555555554444?,sensitive,financial,account,synthetic,True
+My API key is demo_token_83A91X. Can you help me debug this API request?,sensitive,credential,password,synthetic,True
+My contact email is 9000012345. Please format this message professionally.,sensitive,pii,phone,synthetic,True
+Can you write unit tests for this authentication function? The demo token is 5555555555554444.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you teach me cloud computing with an example?,safe,safe,none,synthetic,False
+Compare binary search with another similar concept.,safe,safe,none,synthetic,False
+Why is my Flask application failing to connect? The database password is mysql://test_user:MockPass731@localhost:3306/sampledb.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+The API uses this key: sample_token_X72K. Why is my request failing?,sensitive,credential,access_token,synthetic,True
+Explain the real-world applications of Java programming.,safe,safe,none,synthetic,False
+Can you help me debug a basic example involving binary search?,safe,safe,none,synthetic,False
+Give me some practice questions about binary search.,safe,safe,none,synthetic,False
+Give me some practice questions about cloud computing.,safe,safe,none,synthetic,False
+Explain the real-world applications of HTTP requests.,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of recursion?,safe,safe,none,synthetic,False
+Show me a simple example of recursion.,safe,safe,none,synthetic,False
+My contact email is 9012345678. Please format this message professionally.,sensitive,pii,address,synthetic,True
+Can you explain this deployment configuration? Internal server: 10.20.30.15.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+What are common mistakes when learning REST APIs?,safe,safe,none,synthetic,False
+Please save my contact number sample.account@example.net in this configuration example.,sensitive,pii,address,synthetic,True
+How would I implement virtual memory in Python?,safe,safe,none,synthetic,False
+Can you debug this Python application? My API key is DemoSecure44!.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Give me a beginner-friendly explanation of classification algorithms.,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of database normalization.,safe,safe,none,synthetic,False
+The application configuration contains PASSWORD=MockLogin92#. Can you debug it?,sensitive,credential,access_token,synthetic,True
+Please send the report to demo.student@example.com.,sensitive,pii,address,synthetic,True
+Explain the real-world applications of database normalization.,safe,safe,none,synthetic,False
+How would I implement hash tables in C++?,safe,safe,none,synthetic,False
+How would I implement data structures in Python?,safe,safe,none,synthetic,False
+How does cloud computing work?,safe,safe,none,synthetic,False
+Help me understand sorting algorithms.,safe,safe,none,synthetic,False
+Compare HTTP requests with another similar concept.,safe,safe,none,synthetic,False
+Help me create a Python script that processes this account number: 4111111111111111.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+"My phone number is 42 Demo Street, Chennai. Can you include it in the form?",sensitive,pii,email,synthetic,True
+What are common mistakes when learning database normalization?,safe,safe,none,synthetic,False
+Show me a simple example of operating systems.,safe,safe,none,synthetic,False
+Can you help me redact this financial identifier: 6011111111111117?,sensitive,financial,account,synthetic,True
+Can you teach me Java programming with an example?,safe,safe,none,synthetic,False
+Why does this database connection fail? TestPassword731!,sensitive,credential,api_key,synthetic,True
+Explain the real-world applications of computer networks.,safe,safe,none,synthetic,False
+Compare linear regression with another similar concept.,safe,safe,none,synthetic,False
+Explain the real-world applications of binary trees.,safe,safe,none,synthetic,False
+My contact email is student.demo@example.com. Please format this message professionally.,sensitive,pii,phone,synthetic,True
+Please fix this form validation code. The user's phone number is demo-secret-key-7291.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Help me understand linked lists.,safe,safe,none,synthetic,False
+Can you generate a delivery form using this address: 9876501234?,sensitive,pii,address,synthetic,True
+This is a synthetic banking identifier for my test application: 456789123456.,sensitive,financial,account,synthetic,True
+Please fix this form validation code. The user's phone number is test_access_token_7291.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you improve this REST API code? The test token is DemoSecure44!.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you write unit tests for this authentication function? The demo token is mysql://test_user:MockPass731@localhost:3306/sampledb.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Show me a simple example of Git and GitHub.,safe,safe,none,synthetic,False
+Why is my Flask application failing to connect? The database password is MockLogin92#.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Compare data structures with another similar concept.,safe,safe,none,synthetic,False
+Can you explain the time complexity of process scheduling?,safe,safe,none,synthetic,False
+Can you teach me computer networks with an example?,safe,safe,none,synthetic,False
+Can you help me debug a basic example involving REST APIs?,safe,safe,none,synthetic,False
+How would I implement computer networks in C++?,safe,safe,none,synthetic,False
+Compare computer networks with another similar concept.,safe,safe,none,synthetic,False
+Help me create a Python script that processes this account number: mock.user@example.org.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+"The demo user's address is 91 Mock Colony, Mumbai. Can you format it correctly?",sensitive,pii,phone,synthetic,True
+What are the advantages and disadvantages of virtual memory?,safe,safe,none,synthetic,False
+Please review this connection string: demo-api-key-83921,sensitive,credential,database_credential,synthetic,True
+Can you review this login code? The password is 123456789012.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Give me some practice questions about Git and GitHub.,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of sorting algorithms.,safe,safe,none,synthetic,False
+Show me a simple example of classification algorithms.,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of Docker.,safe,safe,none,synthetic,False
+The application configuration contains PASSWORD=mockBearerToken482. Can you debug it?,sensitive,credential,database_credential,synthetic,True
+Compare database normalization with another similar concept.,safe,safe,none,synthetic,False
+Can you explain how a system should securely handle this account number: 987654321098?,sensitive,financial,account,synthetic,True
+Explain Java programming in simple terms.,safe,safe,none,synthetic,False
+"My phone number is 18 Sample Road, Bengaluru. Can you include it in the form?",sensitive,pii,phone,synthetic,True
+Explain the real-world applications of linked lists.,safe,safe,none,synthetic,False
+Can you help me debug a basic example involving operating systems?,safe,safe,none,synthetic,False
+Help me understand recursion.,safe,safe,none,synthetic,False
+Can you help clean up this customer-management program? The customer email is 5555555555554444.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+"Can you explain how applications should store information such as 42 Demo Street, Chennai?",sensitive,pii,address,synthetic,True
+Can you help me identify the correct field for this account number: 456789123456?,sensitive,financial,account,synthetic,True
+Please save my contact number demo.student@example.com in this configuration example.,sensitive,pii,email,synthetic,True
+What are the advantages and disadvantages of sorting algorithms?,safe,safe,none,synthetic,False
+What are common mistakes when learning classification algorithms?,safe,safe,none,synthetic,False
+How would I implement Linux commands in Python?,safe,safe,none,synthetic,False
+Can you debug this Python application? My API key is 9123405678.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Here is the token used by my test application: mongodb://demo:DemoPass92@localhost:27017/testdb.,sensitive,credential,access_token,synthetic,True
+Can you help me update the account associated with student.demo@example.com?,sensitive,pii,phone,synthetic,True
+The login password in my test configuration is DemoSecure44!.,sensitive,credential,database_credential,synthetic,True
+The demo account number is 5555555555554444. Please format it for the application.,sensitive,financial,account,synthetic,True
+My API key is mysql://test_user:MockPass731@localhost:3306/sampledb. Can you help me debug this API request?,sensitive,credential,access_token,synthetic,True
+Why does this database connection fail? mysql://test_user:MockPass731@localhost:3306/sampledb,sensitive,credential,database_credential,synthetic,True
+How would I implement binary search in C++?,safe,safe,none,synthetic,False
+I entered this card number in the test form: 4000000000000002. Can you validate the format?,sensitive,financial,card,synthetic,True
+Please check the validation logic for this test card: 112233445566.,sensitive,financial,card,synthetic,True
+What are the advantages and disadvantages of data structures?,safe,safe,none,synthetic,False
+This is a synthetic banking identifier for my test application: 4000000000000002.,sensitive,financial,account,synthetic,True
+Can you write unit tests for this authentication function? The demo token is DemoPass482!.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+How would I implement Git and GitHub in Python?,safe,safe,none,synthetic,False
+Compare classification algorithms with another similar concept.,safe,safe,none,synthetic,False
+Can you debug this authentication code? The access token is SamplePwd821@.,sensitive,credential,database_credential,synthetic,True
+Can you debug this authentication code? The access token is test_access_token_7291.,sensitive,credential,database_credential,synthetic,True
+Give me a beginner-friendly explanation of Git and GitHub.,safe,safe,none,synthetic,False
+Can you help me debug a basic example involving data structures?,safe,safe,none,synthetic,False
+Please review this connection string: demo_token_83A91X,sensitive,credential,api_key,synthetic,True
+Please send the report to mock.user@example.org.,sensitive,pii,phone,synthetic,True
+Can you explain the time complexity of Git and GitHub?,safe,safe,none,synthetic,False
+Can you generate a delivery form using this address: test.user@example.org?,sensitive,pii,phone,synthetic,True
+I am testing a payment form with this card number: 6011111111111117.,sensitive,financial,card,synthetic,True
+Give me some practice questions about recursion.,safe,safe,none,synthetic,False
+Can you explain how applications should store information such as sample.account@example.net?,sensitive,pii,email,synthetic,True
+Please save my contact number 9012345678 in this configuration example.,sensitive,pii,email,synthetic,True
+Please check this configuration. API_KEY=TestPassword731!,sensitive,credential,api_key,synthetic,True
+Give me some practice questions about data structures.,safe,safe,none,synthetic,False
+Explain the real-world applications of operating systems.,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of cloud computing.,safe,safe,none,synthetic,False
+Please check the validation logic for this test card: 6011111111111117.,sensitive,financial,account,synthetic,True
+Please debug my PostgreSQL connection. The connection string is mock-api-482917.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you improve this REST API code? The test token is postgresql://demo_user:DemoPass482!@localhost:5432/testdb.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+What are common mistakes when learning object oriented programming?,safe,safe,none,synthetic,False
+The customer's email address is mock.user@example.org. Please draft a confirmation message.,sensitive,pii,email,synthetic,True
+Please review this code and make it more efficient. The database credentials are postgresql://demo_user:DemoPass482!@localhost:5432/testdb.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Give me some practice questions about operating systems.,safe,safe,none,synthetic,False
+"Can you generate a delivery form using this address: 77 Test Avenue, Hyderabad?",sensitive,pii,phone,synthetic,True
+Show me a simple example of object oriented programming.,safe,safe,none,synthetic,False
+Can you debug this authentication code? The access token is postgresql://demo_user:DemoPass482!@localhost:5432/testdb.,sensitive,credential,database_credential,synthetic,True
+Please send the report to sample.account@example.net.,sensitive,pii,email,synthetic,True
+How should an application protect account information such as 4000000000000002?,sensitive,financial,account,synthetic,True
+Help me debug this employee management application. Employee ID: postgresql://demo_user:DemoPass482!@localhost:5432/testdb.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+How should an application protect account information such as 4111111111111111?,sensitive,financial,card,synthetic,True
+Can you teach me data structures with an example?,safe,safe,none,synthetic,False
+Can you explain the time complexity of Python programming?,safe,safe,none,synthetic,False
+Can you teach me classification algorithms with an example?,safe,safe,none,synthetic,False
+I am testing a payment form with this card number: 987654321098.,sensitive,financial,account,synthetic,True
+What are the advantages and disadvantages of cloud computing?,safe,safe,none,synthetic,False
+Can you debug this authentication code? The access token is demo_token_83A91X.,sensitive,credential,api_key,synthetic,True
+Explain binary search in simple terms.,safe,safe,none,synthetic,False
+Can you explain how a system should securely handle this account number: 112233445566?,sensitive,financial,account,synthetic,True
+Give me some practice questions about process scheduling.,safe,safe,none,synthetic,False
+What are common mistakes when learning sorting algorithms?,safe,safe,none,synthetic,False
+Can you help me debug a basic example involving linear regression?,safe,safe,none,synthetic,False
+The customer's email address is 9000012345. Please draft a confirmation message.,sensitive,pii,phone,synthetic,True
+Help me understand REST APIs.,safe,safe,none,synthetic,False
+How would I implement sorting algorithms in Python?,safe,safe,none,synthetic,False
+Explain why this API request fails. The API key being used is EMP-SAMPLE-7741.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Give me a beginner-friendly explanation of recursion.,safe,safe,none,synthetic,False
+My API key is MockLogin92#. Can you help me debug this API request?,sensitive,credential,database_credential,synthetic,True
+Please check the validation logic for this test card: 5555555555554444.,sensitive,financial,card,synthetic,True
+Explain the real-world applications of binary search.,safe,safe,none,synthetic,False
+"Can you help me update the account associated with 42 Demo Street, Chennai?",sensitive,pii,address,synthetic,True
+Can you teach me binary search with an example?,safe,safe,none,synthetic,False
+Explain the real-world applications of REST APIs.,safe,safe,none,synthetic,False
+Can you refactor this application while preserving the customer address DemoPass482!?,sensitive,mixed,mixed_sensitive_information,synthetic,True
+What are the advantages and disadvantages of computer networks?,safe,safe,none,synthetic,False
+Can you debug this Python application? My API key is mock-api-482917.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+What are the advantages and disadvantages of operating systems?,safe,safe,none,synthetic,False
+How does binary trees work?,safe,safe,none,synthetic,False
+The application configuration contains PASSWORD=TestPassword731!. Can you debug it?,sensitive,credential,access_token,synthetic,True
+My API key is sample_token_X72K. Can you help me debug this API request?,sensitive,credential,access_token,synthetic,True
+I am testing a payment form with this card number: 112233445566.,sensitive,financial,account,synthetic,True
+How would I implement virtual memory in C++?,safe,safe,none,synthetic,False
+Can you improve this payment form? The test card number is 6011111111111117.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+My password is demo_token_83A91X. Can you explain why authentication fails?,sensitive,credential,password,synthetic,True
+The demo account number is 6011111111111117. Please format it for the application.,sensitive,financial,account,synthetic,True
+I entered this card number in the test form: 987654321098. Can you validate the format?,sensitive,financial,account,synthetic,True
+What are the advantages and disadvantages of Java programming?,safe,safe,none,synthetic,False
+Can you help me redact this financial identifier: 112233445566?,sensitive,financial,card,synthetic,True
+Can you help me identify the correct field for this account number: 987654321098?,sensitive,financial,card,synthetic,True
+Can you teach me Python programming with an example?,safe,safe,none,synthetic,False
+The employee ID is EMP-TEST-2048. Please include it in the internal report.,sensitive,organizational,employee_id,synthetic,True
+Please help organize this confidential internal system information for documentation.,sensitive,organizational,internal_server,synthetic,True
+The API uses this key: test_access_token_7291. Why is my request failing?,sensitive,credential,password,synthetic,True
+Can you explain the time complexity of linear regression?,safe,safe,none,synthetic,False
+Please send the report to student.demo@example.com.,sensitive,pii,phone,synthetic,True
+Can you debug this Python application? My API key is SamplePwd821@.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you teach me linear regression with an example?,safe,safe,none,synthetic,False
+How would I implement Git and GitHub in C++?,safe,safe,none,synthetic,False
+How would I implement classification algorithms in C++?,safe,safe,none,synthetic,False
+Here is the token used by my test application: demo_token_83A91X.,sensitive,credential,api_key,synthetic,True
+Can you refactor this application while preserving the customer address EMP-TEST-2048?,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Help me understand binary search.,safe,safe,none,synthetic,False
+Give me some practice questions about machine learning.,safe,safe,none,synthetic,False
+How would I implement recursion in C++?,safe,safe,none,synthetic,False
+What are common mistakes when learning binary search?,safe,safe,none,synthetic,False
+How would I implement Linux commands in C++?,safe,safe,none,synthetic,False
+The customer's email address is 8899776655. Please draft a confirmation message.,sensitive,pii,email,synthetic,True
+Can you review this login code? The password is mongodb://demo:DemoPass92@localhost:27017/testdb.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Please check this configuration. API_KEY=sample_token_X72K,sensitive,credential,access_token,synthetic,True
+Give me some practice questions about classification algorithms.,safe,safe,none,synthetic,False
+Please review this connection string: MockLogin92#,sensitive,credential,api_key,synthetic,True
+Give me a beginner-friendly explanation of data structures.,safe,safe,none,synthetic,False
+What are common mistakes when learning virtual memory?,safe,safe,none,synthetic,False
+Can you help me debug a basic example involving classification algorithms?,safe,safe,none,synthetic,False
+Help me understand HTTP requests.,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of object oriented programming.,safe,safe,none,synthetic,False
+Can you debug this Python application? My API key is MockLogin92#.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you generate a delivery form using this address: 9000012345?,sensitive,pii,address,synthetic,True
+What are common mistakes when learning computer networks?,safe,safe,none,synthetic,False
+How does computer networks work?,safe,safe,none,synthetic,False
+Help me debug this employee management application. Employee ID: EMP-SAMPLE-7741.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Show me a simple example of REST APIs.,safe,safe,none,synthetic,False
+The API uses this key: DemoPass482!. Why is my request failing?,sensitive,credential,access_token,synthetic,True
+This is a synthetic banking identifier for my test application: 987654321098.,sensitive,financial,account,synthetic,True
+How would I implement computer networks in Python?,safe,safe,none,synthetic,False
+Help me understand cloud computing.,safe,safe,none,synthetic,False
+The login password in my test configuration is mongodb://demo:DemoPass92@localhost:27017/testdb.,sensitive,credential,password,synthetic,True
+Please check this configuration. API_KEY=mongodb://demo:DemoPass92@localhost:27017/testdb,sensitive,credential,database_credential,synthetic,True
+Can you debug this Python application? My API key is demo.student@example.com.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Compare REST APIs with another similar concept.,safe,safe,none,synthetic,False
+Help me create a Python script that processes this account number: postgresql://demo_user:DemoPass482!@localhost:5432/testdb.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you explain the time complexity of operating systems?,safe,safe,none,synthetic,False
+Can you teach me HTTP requests with an example?,safe,safe,none,synthetic,False
+Help me understand machine learning.,safe,safe,none,synthetic,False
+My contact email is sample.account@example.net. Please format this message professionally.,sensitive,pii,address,synthetic,True
+Can you explain the time complexity of cloud computing?,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of Git and GitHub?,safe,safe,none,synthetic,False
+Compare Git and GitHub with another similar concept.,safe,safe,none,synthetic,False
+Please check the validation logic for this test card: 4000000000000002.,sensitive,financial,account,synthetic,True
+How would I implement machine learning in Python?,safe,safe,none,synthetic,False
+Can you review this login code? The password is 9876501234.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Help me understand Python programming.,safe,safe,none,synthetic,False
+"The customer's email address is 42 Demo Street, Chennai. Please draft a confirmation message.",sensitive,pii,phone,synthetic,True
+Help me understand Java programming.,safe,safe,none,synthetic,False
+Help me debug this employee management application. Employee ID: 456789123456.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you review this login code? The password is sk-test-A7B82C91D4.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Give me some practice questions about computer networks.,safe,safe,none,synthetic,False
+Why does this database connection fail? mongodb://demo:DemoPass92@localhost:27017/testdb,sensitive,credential,database_credential,synthetic,True
+Can you teach me hash tables with an example?,safe,safe,none,synthetic,False
+Can you help clean up this customer-management program? The customer email is demo_token_83A91X.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you teach me recursion with an example?,safe,safe,none,synthetic,False
+I entered this card number in the test form: 123456789012. Can you validate the format?,sensitive,financial,account,synthetic,True
+What are common mistakes when learning Python programming?,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of machine learning.,safe,safe,none,synthetic,False
+Can you help clean up this customer-management program? The customer email is postgresql://demo_user:DemoPass482!@localhost:5432/testdb.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+How would I implement binary search in Python?,safe,safe,none,synthetic,False
+Can you debug this Python application? My API key is mock.user@example.org.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you write unit tests for this authentication function? The demo token is mock.user@example.org.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Here is the token used by my test application: MockLogin92#.,sensitive,credential,database_credential,synthetic,True
+Can you explain how a system should securely handle this account number: 6011111111111117?,sensitive,financial,account,synthetic,True
+I need help validating this contact information: 9012345678.,sensitive,pii,phone,synthetic,True
+Can you explain the time complexity of sorting algorithms?,safe,safe,none,synthetic,False
+Please review this connection string: mongodb://demo:DemoPass92@localhost:27017/testdb,sensitive,credential,password,synthetic,True
+Help me understand process scheduling.,safe,safe,none,synthetic,False
+Why is my Flask application failing to connect? The database password is 8899776655.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Why is my Flask application failing to connect? The database password is demo-api-key-83921.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+What are common mistakes when learning machine learning?,safe,safe,none,synthetic,False
+How would I implement linked lists in C++?,safe,safe,none,synthetic,False
+Explain classification algorithms in simple terms.,safe,safe,none,synthetic,False
+What are common mistakes when learning linear regression?,safe,safe,none,synthetic,False
+Show me a simple example of sorting algorithms.,safe,safe,none,synthetic,False
+Compare sorting algorithms with another similar concept.,safe,safe,none,synthetic,False
+Please check this configuration. API_KEY=demo-api-key-83921,sensitive,credential,password,synthetic,True
+Explain recursion in simple terms.,safe,safe,none,synthetic,False
+Can you improve this REST API code? The test token is STAFF-DEMO-3812.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+The employee ID is EMP-DEMO-1024. Please include it in the internal report.,sensitive,organizational,private_configuration,synthetic,True
+Explain data structures in simple terms.,safe,safe,none,synthetic,False
+My API key is demo-secret-key-7291. Can you help me debug this API request?,sensitive,credential,api_key,synthetic,True
+Give me a beginner-friendly explanation of linear regression.,safe,safe,none,synthetic,False
+Help me understand object oriented programming.,safe,safe,none,synthetic,False
+Here is the token used by my test application: demo-secret-key-7291.,sensitive,credential,database_credential,synthetic,True
+Help me understand C++ programming.,safe,safe,none,synthetic,False
+I entered this card number in the test form: 456789123456. Can you validate the format?,sensitive,financial,account,synthetic,True
+Can you help me debug a basic example involving Docker?,safe,safe,none,synthetic,False
+The API uses this key: demo-api-key-83921. Why is my request failing?,sensitive,credential,database_credential,synthetic,True
+Give me a beginner-friendly explanation of binary trees.,safe,safe,none,synthetic,False
+Explain cloud computing in simple terms.,safe,safe,none,synthetic,False
+Here is the token used by my test application: DemoSecure44!.,sensitive,credential,password,synthetic,True
+The API uses this key: demo-secret-key-7291. Why is my request failing?,sensitive,credential,access_token,synthetic,True
+Help me understand virtual memory.,safe,safe,none,synthetic,False
+Show me a simple example of Linux commands.,safe,safe,none,synthetic,False
+Compare Docker with another similar concept.,safe,safe,none,synthetic,False
+Compare binary trees with another similar concept.,safe,safe,none,synthetic,False
+How would I implement cloud computing in C++?,safe,safe,none,synthetic,False
+Give me some practice questions about linked lists.,safe,safe,none,synthetic,False
+How should an application protect account information such as 456789123456?,sensitive,financial,card,synthetic,True
+Can you improve this payment form? The test card number is mockBearerToken482.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you generate a delivery form using this address: sample.account@example.net?,sensitive,pii,address,synthetic,True
+Give me a beginner-friendly explanation of HTTP requests.,safe,safe,none,synthetic,False
+Give me some practice questions about hash tables.,safe,safe,none,synthetic,False
+Please review this connection string: test_access_token_7291,sensitive,credential,password,synthetic,True
+Explain Docker in simple terms.,safe,safe,none,synthetic,False
+Can you help clean up this customer-management program? The customer email is demo-secret-key-7291.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Why does this database connection fail? postgresql://demo_user:DemoPass482!@localhost:5432/testdb,sensitive,credential,access_token,synthetic,True
+Compare virtual memory with another similar concept.,safe,safe,none,synthetic,False
+"My contact email is 25 Example Street, Pune. Please format this message professionally.",sensitive,pii,phone,synthetic,True
+Compare hash tables with another similar concept.,safe,safe,none,synthetic,False
+Can you review this login code? The password is 6011111111111117.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+How should an application protect account information such as 6011111111111117?,sensitive,financial,card,synthetic,True
+Explain operating systems in simple terms.,safe,safe,none,synthetic,False
+Help me understand database normalization.,safe,safe,none,synthetic,False
+Can you teach me Docker with an example?,safe,safe,none,synthetic,False
+How would I implement operating systems in Python?,safe,safe,none,synthetic,False
+Explain HTTP requests in simple terms.,safe,safe,none,synthetic,False
+My phone number is 8899776655. Can you include it in the form?,sensitive,pii,address,synthetic,True
+Can you generate a delivery form using this address: 9012345678?,sensitive,pii,email,synthetic,True
+Please review this code and make it more efficient. The database credentials are EMP-DEMO-1024.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Please debug my PostgreSQL connection. The connection string is 123456789012.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Why is my Flask application failing to connect? The database password is SamplePwd821@.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Explain the real-world applications of recursion.,safe,safe,none,synthetic,False
+My password is mockBearerToken482. Can you explain why authentication fails?,sensitive,credential,database_credential,synthetic,True
+Please review this code and make it more efficient. The database credentials are 9012345678.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+The application configuration contains PASSWORD=mongodb://demo:DemoPass92@localhost:27017/testdb. Can you debug it?,sensitive,credential,access_token,synthetic,True
+Help me understand Docker.,safe,safe,none,synthetic,False
+Can you improve this payment form? The test card number is 9876501234.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Give me a beginner-friendly explanation of binary search.,safe,safe,none,synthetic,False
+Can you teach me Linux commands with an example?,safe,safe,none,synthetic,False
+Can you help me identify the correct field for this account number: 6011111111111117?,sensitive,financial,card,synthetic,True
+Can you help me debug a basic example involving Java programming?,safe,safe,none,synthetic,False
+Can you write unit tests for this authentication function? The demo token is test_access_token_7291.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Show me a simple example of virtual memory.,safe,safe,none,synthetic,False
+Can you explain how applications should store information such as student.demo@example.com?,sensitive,pii,phone,synthetic,True
+What are common mistakes when learning C++ programming?,safe,safe,none,synthetic,False
+Explain why this API request fails. The API key being used is postgresql://demo_user:DemoPass482!@localhost:5432/testdb.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you help me debug a basic example involving hash tables?,safe,safe,none,synthetic,False
+I entered this card number in the test form: 112233445566. Can you validate the format?,sensitive,financial,card,synthetic,True
+I need help validating this contact information: 8899776655.,sensitive,pii,address,synthetic,True
+Can you teach me machine learning with an example?,safe,safe,none,synthetic,False
+The demo user's address is 9876501234. Can you format it correctly?,sensitive,pii,phone,synthetic,True
+Can you write unit tests for this authentication function? The demo token is MockLogin92#.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+What are the advantages and disadvantages of HTTP requests?,safe,safe,none,synthetic,False
+Show me a simple example of HTTP requests.,safe,safe,none,synthetic,False
+Can you teach me virtual memory with an example?,safe,safe,none,synthetic,False
+Compare Java programming with another similar concept.,safe,safe,none,synthetic,False
+The demo account number is 4000000000000002. Please format it for the application.,sensitive,financial,account,synthetic,True
+Why is my Flask application failing to connect? The database password is 9876501234.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you explain how applications should store information such as 9123405678?,sensitive,pii,email,synthetic,True
+Show me a simple example of cloud computing.,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of linked lists.,safe,safe,none,synthetic,False
+Can you help me debug a basic example involving cloud computing?,safe,safe,none,synthetic,False
+The application configuration contains PASSWORD=sk-test-A7B82C91D4. Can you debug it?,sensitive,credential,database_credential,synthetic,True
+How would I implement database normalization in Python?,safe,safe,none,synthetic,False
+Can you teach me operating systems with an example?,safe,safe,none,synthetic,False
+Can you refactor this application while preserving the customer address sample.account@example.net?,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you help me debug a basic example involving virtual memory?,safe,safe,none,synthetic,False
+Why is my Flask application failing to connect? The database password is 123456789012.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Please check whether this card number is formatted correctly: 5555555555554444.,sensitive,financial,card,synthetic,True
+I need help validating this contact information: 9123405678.,sensitive,pii,phone,synthetic,True
+What are the advantages and disadvantages of linked lists?,safe,safe,none,synthetic,False
+Can you help clean up this customer-management program? The customer email is 4111111111111111.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+My phone number is 9876501234. Can you include it in the form?,sensitive,pii,phone,synthetic,True
+Why does this database connection fail? DemoPass482!,sensitive,credential,api_key,synthetic,True
+Can you write unit tests for this authentication function? The demo token is 8899776655.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+My phone number is sample.account@example.net. Can you include it in the form?,sensitive,pii,address,synthetic,True
+Give me a beginner-friendly explanation of C++ programming.,safe,safe,none,synthetic,False
+How would I implement Java programming in Python?,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of Python programming?,safe,safe,none,synthetic,False
+Give me some practice questions about HTTP requests.,safe,safe,none,synthetic,False
+Please review this connection string: DemoSecure44!,sensitive,credential,access_token,synthetic,True
+What are the advantages and disadvantages of C++ programming?,safe,safe,none,synthetic,False
+How would I implement process scheduling in C++?,safe,safe,none,synthetic,False
+Can you help me redact this financial identifier: 987654321098?,sensitive,financial,card,synthetic,True
+Can you improve this REST API code? The test token is mock.user@example.org.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Please review this connection string: test_key_X92K71,sensitive,credential,access_token,synthetic,True
+I entered this card number in the test form: 6011111111111117. Can you validate the format?,sensitive,financial,account,synthetic,True
+Here is the token used by my test application: sk-test-A7B82C91D4.,sensitive,credential,database_credential,synthetic,True
+Please check this configuration. API_KEY=mysql://test_user:MockPass731@localhost:3306/sampledb,sensitive,credential,access_token,synthetic,True
+My API key is mockBearerToken482. Can you help me debug this API request?,sensitive,credential,api_key,synthetic,True
+The customer's email address is student.demo@example.com. Please draft a confirmation message.,sensitive,pii,phone,synthetic,True
+The API uses this key: mysql://test_user:MockPass731@localhost:3306/sampledb. Why is my request failing?,sensitive,credential,database_credential,synthetic,True
+Explain the real-world applications of process scheduling.,safe,safe,none,synthetic,False
+Can you improve this REST API code? The test token is 4111111111111111.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Please fix this form validation code. The user's phone number is 9123405678.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+How would I implement object oriented programming in Python?,safe,safe,none,synthetic,False
+Help me debug this employee management application. Employee ID: 9012345678.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you help me debug a basic example involving machine learning?,safe,safe,none,synthetic,False
+Can you help me identify the correct field for this account number: 112233445566?,sensitive,financial,account,synthetic,True
+Compare recursion with another similar concept.,safe,safe,none,synthetic,False
+Can you explain how a system should securely handle this account number: 4000000000000002?,sensitive,financial,account,synthetic,True
+How does Docker work?,safe,safe,none,synthetic,False
+Can you improve this REST API code? The test token is 8899776655.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you debug this authentication code? The access token is DemoPass482!.,sensitive,credential,password,synthetic,True
+Please check the validation logic for this test card: 987654321098.,sensitive,financial,card,synthetic,True
+Help me understand computer networks.,safe,safe,none,synthetic,False
+Can you explain the time complexity of linked lists?,safe,safe,none,synthetic,False
+Can you refactor this application while preserving the customer address mock.user@example.org?,sensitive,mixed,mixed_sensitive_information,synthetic,True
+The login password in my test configuration is postgresql://demo_user:DemoPass482!@localhost:5432/testdb.,sensitive,credential,password,synthetic,True
+The login password in my test configuration is demo-api-key-83921.,sensitive,credential,api_key,synthetic,True
+Why is my Flask application failing to connect? The database password is test.user@example.org.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you explain the time complexity of REST APIs?,safe,safe,none,synthetic,False
+Can you explain the time complexity of object oriented programming?,safe,safe,none,synthetic,False
+Give me a beginner-friendly explanation of REST APIs.,safe,safe,none,synthetic,False
+Can you explain how applications should store information such as mock.user@example.org?,sensitive,pii,email,synthetic,True
+How does recursion work?,safe,safe,none,synthetic,False
+My contact email is test.user@example.org. Please format this message professionally.,sensitive,pii,email,synthetic,True
+This is a synthetic banking identifier for my test application: 112233445566.,sensitive,financial,account,synthetic,True
+Please review this code and make it more efficient. The database credentials are sk-test-A7B82C91D4.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you refactor this application while preserving the customer address 112233445566?,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Compare Python programming with another similar concept.,safe,safe,none,synthetic,False
+Can you help me redact this financial identifier: 123456789012?,sensitive,financial,card,synthetic,True
+Can you explain the time complexity of classification algorithms?,safe,safe,none,synthetic,False
+Please fix this form validation code. The user's phone number is demo_token_83A91X.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Give me some practice questions about binary trees.,safe,safe,none,synthetic,False
+How should an application protect account information such as 123456789012?,sensitive,financial,card,synthetic,True
+Can you write unit tests for this authentication function? The demo token is demo_token_83A91X.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Explain the real-world applications of C++ programming.,safe,safe,none,synthetic,False
+How would I implement object oriented programming in C++?,safe,safe,none,synthetic,False
+"Please save my contact number 42 Demo Street, Chennai in this configuration example.",sensitive,pii,email,synthetic,True
+Give me a beginner-friendly explanation of operating systems.,safe,safe,none,synthetic,False
+How does REST APIs work?,safe,safe,none,synthetic,False
+How would I implement cloud computing in Python?,safe,safe,none,synthetic,False
+Can you improve this payment form? The test card number is EMP-DEMO-1024.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Help me debug this employee management application. Employee ID: sample.account@example.net.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you help me debug a basic example involving object oriented programming?,safe,safe,none,synthetic,False
+Show me a simple example of binary trees.,safe,safe,none,synthetic,False
+The application configuration contains PASSWORD=DemoPass482!. Can you debug it?,sensitive,credential,api_key,synthetic,True
+How does database normalization work?,safe,safe,none,synthetic,False
+Can you improve this REST API code? The test token is mysql://test_user:MockPass731@localhost:3306/sampledb.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Please save my contact number test.user@example.org in this configuration example.,sensitive,pii,email,synthetic,True
+Compare object oriented programming with another similar concept.,safe,safe,none,synthetic,False
+Can you help me debug a basic example involving recursion?,safe,safe,none,synthetic,False
+What are common mistakes when learning hash tables?,safe,safe,none,synthetic,False
+What are common mistakes when learning HTTP requests?,safe,safe,none,synthetic,False
+Can you help me debug a basic example involving C++ programming?,safe,safe,none,synthetic,False
+Can you explain how a system should securely handle this account number: 4111111111111111?,sensitive,financial,account,synthetic,True
+Can you explain the time complexity of virtual memory?,safe,safe,none,synthetic,False
+Can you refactor this application while preserving the customer address 456789123456?,sensitive,mixed,mixed_sensitive_information,synthetic,True
+My password is mongodb://demo:DemoPass92@localhost:27017/testdb. Can you explain why authentication fails?,sensitive,credential,api_key,synthetic,True
+"Can you help me update the account associated with 18 Sample Road, Bengaluru?",sensitive,pii,phone,synthetic,True
+Show me a simple example of process scheduling.,safe,safe,none,synthetic,False
+Can you debug this authentication code? The access token is MockLogin92#.,sensitive,credential,api_key,synthetic,True
+The login password in my test configuration is mock-api-482917.,sensitive,credential,access_token,synthetic,True
+How would I implement recursion in Python?,safe,safe,none,synthetic,False
+Can you debug this authentication code? The access token is mongodb://demo:DemoPass92@localhost:27017/testdb.,sensitive,credential,access_token,synthetic,True
+Here is the token used by my test application: sample_token_X72K.,sensitive,credential,password,synthetic,True
+"Please save my contact number 77 Test Avenue, Hyderabad in this configuration example.",sensitive,pii,address,synthetic,True
+Please fix this form validation code. The user's phone number is MockLogin92#.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+The demo account number is 456789123456. Please format it for the application.,sensitive,financial,card,synthetic,True
+Can you help me update the account associated with demo.student@example.com?,sensitive,pii,phone,synthetic,True
+Give me some practice questions about virtual memory.,safe,safe,none,synthetic,False
+"My phone number is 25 Example Street, Pune. Can you include it in the form?",sensitive,pii,address,synthetic,True
+Show me a simple example of binary search.,safe,safe,none,synthetic,False
+"My phone number is 77 Test Avenue, Hyderabad. Can you include it in the form?",sensitive,pii,phone,synthetic,True
+How would I implement C++ programming in Python?,safe,safe,none,synthetic,False
+The login password in my test configuration is demo-secret-key-7291.,sensitive,credential,password,synthetic,True
+Give me some practice questions about linear regression.,safe,safe,none,synthetic,False
+How does object oriented programming work?,safe,safe,none,synthetic,False
+Explain Linux commands in simple terms.,safe,safe,none,synthetic,False
+Please review this connection string: DemoPass482!,sensitive,credential,api_key,synthetic,True
+Can you help clean up this customer-management program? The customer email is EMP-SAMPLE-7741.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Can you explain how applications should store information such as 9012345678?,sensitive,pii,email,synthetic,True
+Please fix this form validation code. The user's phone number is sample_token_X72K.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Please review this code and make it more efficient. The database credentials are test_key_X92K71.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Why is my Flask application failing to connect? The database password is mockBearerToken482.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+The demo account number is 112233445566. Please format it for the application.,sensitive,financial,account,synthetic,True
+Why does this database connection fail? SamplePwd821@,sensitive,credential,password,synthetic,True
+"The demo user's address is 25 Example Street, Pune. Can you format it correctly?",sensitive,pii,address,synthetic,True
+The login password in my test configuration is sample_token_X72K.,sensitive,credential,password,synthetic,True
+Can you help me update the account associated with 9012345678?,sensitive,pii,phone,synthetic,True
+Explain why this API request fails. The API key being used is sample_token_X72K.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+Explain the real-world applications of sorting algorithms.,safe,safe,none,synthetic,False
+What are the advantages and disadvantages of binary search?,safe,safe,none,synthetic,False
+"The demo user's address is 42 Demo Street, Chennai. Can you format it correctly?",sensitive,pii,address,synthetic,True
+Can you debug this Python application? My API key is mysql://test_user:MockPass731@localhost:3306/sampledb.,sensitive,mixed,mixed_sensitive_information,synthetic,True
+"Can you explain how applications should store information such as 77 Test Avenue, Hyderabad?",sensitive,pii,phone,synthetic,True
+Please check whether this card number is formatted correctly: 456789123456.,sensitive,financial,card,synthetic,True
+Can you explain how a system should securely handle this account number: 5555555555554444?,sensitive,financial,card,synthetic,True
+Show me a simple example of Java programming.,safe,safe,none,synthetic,False
