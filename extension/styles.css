@@ -8,20 +8,32 @@
     align-items: center;
     justify-content: center;
 
-    background: rgba(0, 0, 0, 0.55);
+    padding: 20px;
+    box-sizing: border-box;
+
+    background: rgba(0, 0, 0, 0.60);
 
     font-family:
         Arial,
         Helvetica,
         sans-serif;
+
+    overflow-y: auto;
 }
 
 
+/* ================================
+   MAIN WARNING CARD
+================================ */
+
 .shadowshield-card {
 
-    width: 460px;
+    width: 520px;
+    max-width: 92vw;
 
-    max-width: 90vw;
+    max-height: 88vh;
+
+    box-sizing: border-box;
 
     background: white;
 
@@ -33,8 +45,14 @@
         0 20px 60px rgba(0, 0, 0, 0.35);
 
     color: #111827;
+
+    overflow-y: auto;
 }
 
+
+/* ================================
+   TITLE
+================================ */
 
 .shadowshield-title {
 
@@ -46,6 +64,10 @@
 }
 
 
+/* ================================
+   MESSAGE
+================================ */
+
 .shadowshield-message {
 
     font-size: 15px;
@@ -55,6 +77,10 @@
     margin-bottom: 14px;
 }
 
+
+/* ================================
+   RISK
+================================ */
 
 .shadowshield-risk {
 
@@ -70,6 +96,10 @@
 }
 
 
+/* ================================
+   DETECTIONS
+================================ */
+
 .shadowshield-detections {
 
     margin-bottom: 16px;
@@ -77,8 +107,18 @@
     font-size: 14px;
 
     line-height: 1.6;
+
+    max-height: 140px;
+
+    overflow-y: auto;
+
+    padding-right: 6px;
 }
 
+
+/* ================================
+   REDACTED PREVIEW
+================================ */
 
 .shadowshield-preview {
 
@@ -87,6 +127,12 @@
     font-size: 14px;
 }
 
+
+/*
+   IMPORTANT:
+   Do NOT allow a huge prompt to
+   expand the warning dialog.
+*/
 
 .shadowshield-text {
 
@@ -100,9 +146,29 @@
 
     word-break: break-word;
 
+    overflow-wrap: anywhere;
+
+    white-space: pre-wrap;
+
     line-height: 1.5;
+
+    max-height: 180px;
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+    border: 1px solid #e5e7eb;
+
+    font-size: 13px;
+
+    box-sizing: border-box;
 }
 
+
+/* ================================
+   BUTTONS
+================================ */
 
 .shadowshield-buttons {
 
@@ -111,6 +177,14 @@
     flex-wrap: wrap;
 
     gap: 8px;
+
+    position: sticky;
+
+    bottom: 0;
+
+    background: white;
+
+    padding-top: 8px;
 }
 
 
@@ -136,9 +210,38 @@
 }
 
 
+/* ================================
+   PRIMARY BUTTON
+================================ */
+
 .shadowshield-primary {
 
     background: #111827 !important;
 
     color: white;
+}
+
+
+/* ================================
+   SMALL SCREENS
+================================ */
+
+@media (max-height: 700px) {
+
+    .shadowshield-card {
+
+        max-height: 92vh;
+
+        padding: 18px;
+    }
+
+    .shadowshield-text {
+
+        max-height: 120px;
+    }
+
+    .shadowshield-detections {
+
+        max-height: 100px;
+    }
 }

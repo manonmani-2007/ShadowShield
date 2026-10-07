@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "ShadowShield",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Privacy protection layer for AI prompts.",
   "permissions": [
     "storage"
@@ -20,7 +20,10 @@
   "content_scripts": [
     {
       "matches": [
-        "https://chatgpt.com/*"
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://gemini.google.com/*",
+        "https://claude.ai/*"
       ],
       "js": [
         "content.js"

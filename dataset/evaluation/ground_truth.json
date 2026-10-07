@@ -1,0 +1,113 @@
+{
+    "description": "Synthetic long-prompt evaluation dataset for ShadowShield.",
+    "synthetic_only": true,
+    "target_lines": 1200,
+    "actual_lines": 1200,
+    "total_ground_truth_findings": 18,
+    "finding_counts": {
+        "email": 2,
+        "employee_id": 3,
+        "api_key": 1,
+        "password": 1,
+        "internal_url": 2,
+        "project_identifier": 2,
+        "private_ip": 2,
+        "token": 1,
+        "secret_assignment": 1,
+        "account_number": 1,
+        "phone": 1,
+        "environment_variable": 1
+    },
+    "findings": [
+        {
+            "type": "email",
+            "value": "developer1042@example.com",
+            "line": 120
+        },
+        {
+            "type": "employee_id",
+            "value": "EMP-2026-1042",
+            "line": 180
+        },
+        {
+            "type": "api_key",
+            "value": "sk-fakeabcdefghijklmnopqrstuvwxyz123456",
+            "line": 240
+        },
+        {
+            "type": "password",
+            "value": "DemoPass2026",
+            "line": 300
+        },
+        {
+            "type": "internal_url",
+            "value": "http://192.168.1.20:8080/api/users",
+            "line": 360
+        },
+        {
+            "type": "internal_url",
+            "value": "http://10.0.0.15:9000/api/v1",
+            "line": 420
+        },
+        {
+            "type": "employee_id",
+            "value": "EMP-2026-2087",
+            "line": 480
+        },
+        {
+            "type": "project_identifier",
+            "value": "SHADOW-2026-001",
+            "line": 540
+        },
+        {
+            "type": "private_ip",
+            "value": "192.168.1.55",
+            "line": 600
+        },
+        {
+            "type": "private_ip",
+            "value": "10.0.0.42",
+            "line": 660
+        },
+        {
+            "type": "token",
+            "value": "FakeAuthToken2026ABCDEF",
+            "line": 720
+        },
+        {
+            "type": "secret_assignment",
+            "value": "fake-client-secret-2026",
+            "line": 780
+        },
+        {
+            "type": "account_number",
+            "value": "123456789012",
+            "line": 840
+        },
+        {
+            "type": "email",
+            "value": "project.owner@example.com",
+            "line": 900
+        },
+        {
+            "type": "phone",
+            "value": "9876543210",
+            "line": 960
+        },
+        {
+            "type": "project_identifier",
+            "value": "TRUST-2026-014",
+            "line": 1020
+        },
+        {
+            "type": "environment_variable",
+            "value": "OPENAI_API_KEY",
+            "line": 1080
+        },
+        {
+            "type": "employee_id",
+            "value": "STAFF-2026-3311",
+            "line": 1140
+        }
+    ]
+}
