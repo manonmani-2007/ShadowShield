@@ -1,12 +1,9 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from backend.detector import analyze_prompt
 
-
-# ============================================================
-# FASTAPI APP
-# ============================================================
 
 app = FastAPI(
     title="ShadowShield API",
@@ -15,22 +12,22 @@ app = FastAPI(
 )
 
 
-# ============================================================
-# REQUEST MODEL
-# ============================================================
+# Allow requests from the ShadowShield Chrome extension
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 class PromptRequest(BaseModel):
-
     text: str
 
 
-# ============================================================
-# HEALTH CHECK
-# ============================================================
-
 @app.get("/")
 def root():
-
     return {
         "status": "online",
         "service": "ShadowShield",
@@ -38,27 +35,14 @@ def root():
     }
 
 
-# ============================================================
-# HEALTH ENDPOINT
-# ============================================================
-
 @app.get("/health")
 def health():
-
     return {
         "status": "healthy"
     }
 
 
-# ============================================================
-# ANALYZE ENDPOINT
-# ============================================================
-
 @app.post("/analyze")
 def analyze(request: PromptRequest):
-
-    result = analyze_prompt(
-        request.text
-    )
-
+    result = analyze_prompt(request.text)
     return result
