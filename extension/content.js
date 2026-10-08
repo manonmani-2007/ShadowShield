@@ -1,11 +1,15 @@
-console.log("ShadowShield multi-AI content script loaded.");
+// ============================================================
+// SHADOWSHIELD CONTENT SCRIPT
+// ChatGPT + Gemini + Claude
+// ============================================================
+
+console.log("ShadowShield: Content script loaded.");
 
 let shadowShieldChecking = false;
 let allowNextSend = false;
 
-// Stores large text captured during paste.
-// Claude may convert large pasted content into a "PASTED" card,
-// so the editor itself may no longer contain the actual text.
+// Claude can convert a large clipboard paste into a "PASTED"
+// object/card. We preserve the original clipboard text here.
 let lastPastedText = "";
 let lastPastedTime = 0;
 
@@ -19,34 +23,48 @@ function getPlatform() {
     const host = window.location.hostname;
 
     if (
-        host === "chatgpt.com" ||
-        host === "chat.openai.com"
+        host.includes("chatgpt.com") ||
+        host.includes("chat.openai.com")
     ) {
         return "chatgpt";
     }
 
-    if (host === "gemini.google.com") {
+    if (host.includes("gemini.google.com")) {
         return "gemini";
     }
 
-    if (
-        host === "claude.ai" ||
-        host.endsWith(".claude.ai")
-    ) {
+    if (host.includes("claude.ai")) {
         return "claude";
     }
 
-    return "generic";
+    return "unknown";
 }
 
 
 // ============================================================
-// FIND PROMPT BOX
+// FIND PROMPT EDITOR
 // ============================================================
 
 function findPromptBox() {
 
     const platform = getPlatform();
+
+    // --------------------------------------------------------
+    // CHATGPT
+    // --------------------------------------------------------
+
+    if (platform === "chatgpt") {
+
+        const chatGPTEditor =
+            document.querySelector(
+                "div[contenteditable='true'].ProseMirror"
+            );
+
+        if (chatGPTEditor) {
+            return chatGPTEditor;
+        }
+    }
+
 
     // --------------------------------------------------------
     // CLAUDE
@@ -56,37 +74,20 @@ function findPromptBox() {
 
         const claudeEditor =
             document.querySelector(
-                'div[contenteditable="true"].tiptap.ProseMirror[aria-label="Write your prompt to Claude"]'
+                "div.tiptap.ProseMirror[contenteditable='true']"
             );
 
         if (claudeEditor) {
             return claudeEditor;
         }
 
-        const claudeFallback =
+        const claudeGeneric =
             document.querySelector(
-                'div[contenteditable="true"].tiptap.ProseMirror'
+                "div[contenteditable='true'][aria-label*='prompt' i]"
             );
 
-        if (claudeFallback) {
-            return claudeFallback;
-        }
-    }
-
-
-    // --------------------------------------------------------
-    // CHATGPT
-    // --------------------------------------------------------
-
-    if (platform === "chatgpt") {
-
-        const chatgptEditor =
-            document.querySelector(
-                "div[contenteditable='true'].ProseMirror"
-            );
-
-        if (chatgptEditor) {
-            return chatgptEditor;
+        if (claudeGeneric) {
+            return claudeGeneric;
         }
     }
 
@@ -99,50 +100,33 @@ function findPromptBox() {
 
         const geminiEditor =
             document.querySelector(
-                'div[contenteditable="true"]'
+                "div[contenteditable='true']"
             );
 
         if (geminiEditor) {
             return geminiEditor;
         }
-
-        const textarea =
-            document.querySelector("textarea");
-
-        if (textarea) {
-            return textarea;
-        }
     }
 
 
     // --------------------------------------------------------
-    // GENERIC
+    // GENERIC FALLBACK
     // --------------------------------------------------------
 
-    return (
-        document.querySelector(
-            'div[contenteditable="true"]'
-        ) ||
-        document.querySelector("textarea")
+    return document.querySelector(
+        "div[contenteditable='true']"
     );
 }
 
 
 // ============================================================
-// GET EDITOR TEXT
+// GET NORMAL EDITOR TEXT
 // ============================================================
 
 function getEditorText(editor) {
 
     if (!editor) {
         return "";
-    }
-
-    if (
-        editor.tagName === "TEXTAREA" ||
-        editor.tagName === "INPUT"
-    ) {
-        return (editor.value || "").trim();
     }
 
     return (
@@ -157,52 +141,62 @@ function getEditorText(editor) {
 // GET CURRENT PROMPT
 // ============================================================
 
-function getCurrentPrompt() {
-
-    const editor = findPromptBox();
-
-    if (!editor) {
-        return "";
-    }
+function getCurrentPrompt(editor) {
 
     const editorText =
         getEditorText(editor);
 
+    const platform =
+        getPlatform();
+
     // --------------------------------------------------------
-    // CLAUDE LARGE PASTE HANDLING
+    // CLAUDE LARGE-PASTE FIX
     // --------------------------------------------------------
     //
-    // Claude may transform a large paste into a PASTED card.
-    // In that case editorText may be only 1-2 lines.
+    // Claude may turn a large paste into a "PASTED" object.
+    // The editor then contains only a small representation
+    // instead of the complete clipboard text.
     //
-    // If we recently captured a substantial clipboard paste,
-    // use the captured text instead.
+    // If a recent clipboard paste is substantially larger
+    // than the editor content, use the original pasted text.
     // --------------------------------------------------------
 
-    if (getPlatform() === "claude") {
+    if (platform === "claude") {
 
-        const pasteAge =
-            Date.now() - lastPastedTime;
+        const now =
+            Date.now();
 
-        const hasRecentPaste =
-            lastPastedText &&
-            pasteAge < 5 * 60 * 1000;
+        const recentPaste =
+            (
+                lastPastedText &&
+                (now - lastPastedTime) < 10000
+            );
 
         if (
-            hasRecentPaste &&
-            lastPastedText.length > editorText.length * 3 &&
-            lastPastedText.length > 200
+            recentPaste &&
+            lastPastedText.length > 500 &&
+            lastPastedText.length >
+                Math.max(
+                    editorText.length * 2,
+                    1000
+                )
         ) {
 
             console.log(
-                "ShadowShield: Using captured Claude paste.",
-                {
-                    editorCharacters: editorText.length,
-                    capturedCharacters: lastPastedText.length
-                }
+                "ShadowShield: Using captured Claude paste."
             );
 
-            return lastPastedText;
+            console.log(
+                "ShadowShield: Captured characters:",
+                lastPastedText.length
+            );
+
+            console.log(
+                "ShadowShield: Captured lines:",
+                lastPastedText.split(/\r?\n/).length
+            );
+
+            return lastPastedText.trim();
         }
     }
 
@@ -211,93 +205,50 @@ function getCurrentPrompt() {
 
 
 // ============================================================
-// CAPTURE PASTE
+// CAPTURE CLIPBOARD PASTE
 // ============================================================
 
 document.addEventListener(
     "paste",
     event => {
 
-        const platform =
-            getPlatform();
+        try {
 
-        if (
-            platform !== "claude"
-        ) {
-            return;
-        }
+            const pastedText =
+                event.clipboardData
+                    ?.getData("text/plain");
 
-        const target =
-            event.target;
+            if (
+                pastedText &&
+                pastedText.trim()
+            ) {
 
-        if (
-            !target ||
-            !target.closest
-        ) {
-            return;
-        }
+                lastPastedText =
+                    pastedText;
 
-        const editor =
-            target.closest(
-                'div[contenteditable="true"]'
-            );
+                lastPastedTime =
+                    Date.now();
 
-        if (!editor) {
-            return;
-        }
-
-        let pastedText = "";
-
-        // ClipboardEvent clipboardData
-        if (
-            event.clipboardData &&
-            event.clipboardData.getData
-        ) {
-
-            pastedText =
-                event.clipboardData.getData(
-                    "text/plain"
+                console.log(
+                    "ShadowShield: Paste captured."
                 );
-        }
 
-        // Fallback
-        if (!pastedText) {
+                console.log(
+                    "ShadowShield: Captured characters:",
+                    pastedText.length
+                );
 
-            try {
-
-                pastedText =
-                    event.clipboardData.getData(
-                        "text"
-                    );
-
-            } catch (error) {
-                console.warn(
-                    "ShadowShield: Could not read pasted text.",
-                    error
+                console.log(
+                    "ShadowShield: Captured lines:",
+                    pastedText.split(/\r?\n/).length
                 );
             }
-        }
 
-        if (
-            pastedText &&
-            pastedText.trim()
-        ) {
+        } catch (error) {
 
-            lastPastedText =
-                pastedText;
-
-            lastPastedTime =
-                Date.now();
-
-            console.log(
-                "ShadowShield: Captured Claude paste.",
-                {
-                    characters:
-                        pastedText.length,
-
-                    lines:
-                        pastedText.split("\n").length
-                }
+            console.warn(
+                "ShadowShield: Could not capture paste:",
+                error
             );
         }
 
@@ -307,48 +258,40 @@ document.addEventListener(
 
 
 // ============================================================
-// SEND TO FASTAPI
+// SEND PROMPT TO BACKGROUND SERVICE WORKER
 // ============================================================
 
 function sendForAnalysis(text) {
 
     return new Promise(resolve => {
 
-        try {
+        chrome.runtime.sendMessage(
+            {
+                type: "ANALYZE_PROMPT",
+                text: text
+            },
 
-            chrome.runtime.sendMessage(
-                {
-                    type: "ANALYZE_PROMPT",
-                    text: text
-                },
-                response => {
+            response => {
 
-                    if (
-                        chrome.runtime.lastError
-                    ) {
+                if (chrome.runtime.lastError) {
 
-                        console.error(
-                            "ShadowShield API error:",
+                    console.error(
+                        "ShadowShield API error:",
+                        chrome.runtime.lastError.message
+                    );
+
+                    resolve({
+                        success: false,
+                        error:
                             chrome.runtime.lastError.message
-                        );
+                    });
 
-                        resolve(null);
-                        return;
-                    }
-
-                    resolve(response);
+                    return;
                 }
-            );
 
-        } catch (error) {
-
-            console.error(
-                "ShadowShield message error:",
-                error
-            );
-
-            resolve(null);
-        }
+                resolve(response);
+            }
+        );
     });
 }
 
@@ -364,45 +307,18 @@ function findSendButton() {
 
 
     // --------------------------------------------------------
-    // CLAUDE
-    // --------------------------------------------------------
-
-    if (
-        platform === "claude"
-    ) {
-
-        const button =
-            document.querySelector(
-                'button[aria-label="Send message"]'
-            );
-
-        if (
-            button &&
-            !button.disabled
-        ) {
-            return button;
-        }
-    }
-
-
-    // --------------------------------------------------------
     // CHATGPT
     // --------------------------------------------------------
 
-    if (
-        platform === "chatgpt"
-    ) {
+    if (platform === "chatgpt") {
 
-        const button =
+        const chatGPTButton =
             document.querySelector(
                 "button[data-testid='send-button']"
             );
 
-        if (
-            button &&
-            !button.disabled
-        ) {
-            return button;
+        if (chatGPTButton) {
+            return chatGPTButton;
         }
     }
 
@@ -411,98 +327,70 @@ function findSendButton() {
     // GEMINI
     // --------------------------------------------------------
 
-    if (
-        platform === "gemini"
-    ) {
+    if (platform === "gemini") {
 
-        const buttons =
-            document.querySelectorAll(
-                "button"
+        const geminiButton =
+            document.querySelector(
+                "button[aria-label='Send message']"
             );
 
-        for (
-            const button of buttons
-        ) {
+        if (geminiButton) {
+            return geminiButton;
+        }
 
-            if (button.disabled) {
-                continue;
-            }
+        const geminiButton2 =
+            document.querySelector(
+                "button[data-testid='send-button']"
+            );
 
-            const aria =
-                (
-                    button.getAttribute(
-                        "aria-label"
-                    ) || ""
-                ).toLowerCase();
-
-            const title =
-                (
-                    button.getAttribute(
-                        "title"
-                    ) || ""
-                ).toLowerCase();
-
-            const text =
-                (
-                    button.innerText ||
-                    ""
-                ).toLowerCase();
-
-            if (
-                aria.includes("send") ||
-                aria.includes("submit") ||
-                title.includes("send") ||
-                title.includes("submit") ||
-                text === "send"
-            ) {
-                return button;
-            }
+        if (geminiButton2) {
+            return geminiButton2;
         }
     }
 
 
     // --------------------------------------------------------
-    // GENERIC
+    // CLAUDE
+    // --------------------------------------------------------
+
+    if (platform === "claude") {
+
+        const claudeButton =
+            document.querySelector(
+                "button[aria-label='Send message']"
+            );
+
+        if (claudeButton) {
+            return claudeButton;
+        }
+    }
+
+
+    // --------------------------------------------------------
+    // GENERIC FALLBACK
     // --------------------------------------------------------
 
     const buttons =
-        document.querySelectorAll(
-            "button"
-        );
+        document.querySelectorAll("button");
 
-    for (
-        const button of buttons
-    ) {
+    for (const button of buttons) {
 
-        if (button.disabled) {
-            continue;
-        }
-
-        const aria =
+        const label =
             (
-                button.getAttribute(
-                    "aria-label"
-                ) || ""
-            ).toLowerCase();
-
-        const title =
-            (
-                button.getAttribute(
-                    "title"
-                ) || ""
-            ).toLowerCase();
-
-        const text =
-            (
-                button.innerText ||
+                button.getAttribute("aria-label") ||
                 ""
             ).toLowerCase();
 
+        const testId =
+            button.getAttribute("data-testid") ||
+            "";
+
         if (
-            aria.includes("send") ||
-            title.includes("send") ||
-            text === "send"
+            testId === "send-button" ||
+            label === "send message" ||
+            label.includes("send")
         ) {
+
             return button;
         }
     }
@@ -512,216 +400,10 @@ function findSendButton() {
 
 
 // ============================================================
-// REPLACE TEXTAREA
+// PROGRAMMATICALLY SEND APPROVED PROMPT
 // ============================================================
 
-function replaceTextareaText(
-    editor,
-    newText
-) {
-
-    try {
-
-        editor.focus();
-
-        const prototype =
-            Object.getPrototypeOf(
-                editor
-            );
-
-        const descriptor =
-            Object.getOwnPropertyDescriptor(
-                prototype,
-                "value"
-            );
-
-        if (
-            descriptor &&
-            descriptor.set
-        ) {
-
-            descriptor.set.call(
-                editor,
-                newText
-            );
-
-        } else {
-
-            editor.value =
-                newText;
-        }
-
-        editor.dispatchEvent(
-            new Event(
-                "input",
-                {
-                    bubbles: true
-                }
-            )
-        );
-
-        editor.dispatchEvent(
-            new Event(
-                "change",
-                {
-                    bubbles: true
-                }
-            )
-        );
-
-        return true;
-
-    } catch (error) {
-
-        console.error(
-            "ShadowShield textarea replacement failed:",
-            error
-        );
-
-        return false;
-    }
-}
-
-
-// ============================================================
-// REPLACE CONTENTEDITABLE
-// ============================================================
-
-function replaceContentEditableText(
-    editor,
-    newText
-) {
-
-    if (!editor) {
-        return false;
-    }
-
-    try {
-
-        editor.focus();
-
-
-        // Select everything inside the editor.
-        const selection =
-            window.getSelection();
-
-        const range =
-            document.createRange();
-
-        range.selectNodeContents(
-            editor
-        );
-
-        selection.removeAllRanges();
-
-        selection.addRange(
-            range
-        );
-
-
-        let success =
-            false;
-
-
-        // First try execCommand.
-        try {
-
-            success =
-                document.execCommand(
-                    "insertText",
-                    false,
-                    newText
-                );
-
-        } catch (error) {
-
-            console.warn(
-                "ShadowShield execCommand failed:",
-                error
-            );
-        }
-
-
-        // Fallback for a normal contenteditable.
-        if (!success) {
-
-            editor.textContent =
-                newText;
-        }
-
-
-        editor.dispatchEvent(
-            new InputEvent(
-                "input",
-                {
-                    bubbles: true,
-                    inputType: "insertText",
-                    data: newText
-                }
-            )
-        );
-
-
-        editor.dispatchEvent(
-            new Event(
-                "change",
-                {
-                    bubbles: true
-                }
-            )
-        );
-
-
-        return true;
-
-    } catch (error) {
-
-        console.error(
-            "ShadowShield contenteditable replacement failed:",
-            error
-        );
-
-        return false;
-    }
-}
-
-
-// ============================================================
-// REPLACE EDITOR
-// ============================================================
-
-function replaceEditorText(
-    editor,
-    newText
-) {
-
-    if (!editor) {
-        return false;
-    }
-
-    if (
-        editor.tagName === "TEXTAREA" ||
-        editor.tagName === "INPUT"
-    ) {
-
-        return replaceTextareaText(
-            editor,
-            newText
-        );
-    }
-
-    return replaceContentEditableText(
-        editor,
-        newText
-    );
-}
-
-
-// ============================================================
-// CLICK APPROVED SEND
-// ============================================================
-
-function clickPlatformSend() {
+function clickApprovedSend() {
 
     const button =
         findSendButton();
@@ -738,7 +420,7 @@ function clickPlatformSend() {
     if (button.disabled) {
 
         console.warn(
-            "ShadowShield: Send button disabled."
+            "ShadowShield: Send button is disabled."
         );
 
         return false;
@@ -748,38 +430,155 @@ function clickPlatformSend() {
         "ShadowShield: Sending approved prompt."
     );
 
-    allowNextSend =
-        true;
+    allowNextSend = true;
 
-    setTimeout(
-        () => {
+    setTimeout(() => {
 
-            const currentButton =
-                findSendButton();
+        const currentButton =
+            findSendButton();
 
-            if (
-                currentButton &&
-                !currentButton.disabled
-            ) {
+        if (!currentButton) {
 
-                currentButton.click();
+            allowNextSend = false;
 
-            } else {
-
-                console.warn(
-                    "ShadowShield: Approved send button unavailable."
-                );
-            }
-
-            setTimeout(
-                () => {
-                    allowNextSend = false;
-                },
-                1000
+            console.warn(
+                "ShadowShield: Send button disappeared."
             );
 
-        },
-        400
+            return;
+        }
+
+        if (currentButton.disabled) {
+
+            allowNextSend = false;
+
+            console.warn(
+                "ShadowShield: Send button became disabled."
+            );
+
+            return;
+        }
+
+        currentButton.click();
+
+        setTimeout(() => {
+
+            allowNextSend = false;
+
+        }, 1000);
+
+    }, 300);
+
+    return true;
+}
+
+
+// ============================================================
+// REPLACE EDITOR TEXT
+// ============================================================
+
+function replaceEditorText(
+    editor,
+    newText
+) {
+
+    if (!editor) {
+        return false;
+    }
+
+    editor.focus();
+
+    try {
+
+        const selection =
+            window.getSelection();
+
+        const range =
+            document.createRange();
+
+        range.selectNodeContents(editor);
+
+        selection.removeAllRanges();
+
+        selection.addRange(range);
+
+    } catch (error) {
+
+        console.warn(
+            "ShadowShield: Selection error:",
+            error
+        );
+    }
+
+
+    let success = false;
+
+    try {
+
+        success =
+            document.execCommand(
+                "insertText",
+                false,
+                newText
+            );
+
+    } catch (error) {
+
+        console.warn(
+            "ShadowShield: execCommand failed:",
+            error
+        );
+    }
+
+
+    // --------------------------------------------------------
+    // FALLBACK
+    // --------------------------------------------------------
+
+    if (!success) {
+
+        editor.textContent =
+            newText;
+    }
+
+
+    // --------------------------------------------------------
+    // Notify framework
+    // --------------------------------------------------------
+
+    try {
+
+        editor.dispatchEvent(
+            new InputEvent(
+                "input",
+                {
+                    bubbles: true,
+                    inputType: "insertText",
+                    data: newText
+                }
+            )
+        );
+
+    } catch (error) {
+
+        editor.dispatchEvent(
+            new Event(
+                "input",
+                {
+                    bubbles: true
+                }
+            )
+        );
+    }
+
+
+    editor.dispatchEvent(
+        new Event(
+            "change",
+            {
+                bubbles: true
+            }
+        )
     );
 
     return true;
@@ -787,18 +586,16 @@ function clickPlatformSend() {
 
 
 // ============================================================
-// ESCAPE HTML
+// HTML ESCAPE
 // ============================================================
 
 function escapeHtml(text) {
 
     const div =
-        document.createElement(
-            "div"
-        );
+        document.createElement("div");
 
     div.textContent =
-        text || "";
+        String(text ?? "");
 
     return div.innerHTML;
 }
@@ -810,13 +607,17 @@ function escapeHtml(text) {
 
 function removeWarning() {
 
-    const overlay =
+    const existing =
         document.getElementById(
             "shadowshield-warning"
         );
 
-    if (overlay) {
-        overlay.remove();
+    if (existing) {
+        existing.remove();
+
+        console.log(
+            "ShadowShield: Warning removed."
+        );
     }
 }
 
@@ -834,47 +635,55 @@ function showWarning(
 
 
     const overlay =
-        document.createElement(
-            "div"
-        );
+        document.createElement("div");
 
     overlay.id =
         "shadowshield-warning";
 
 
+    // Prevent clicks inside our UI from reaching
+    // the AI platform's click handler.
     overlay.addEventListener(
         "click",
         event => {
+
             event.stopPropagation();
+
         }
     );
 
 
     const detections =
-        Array.isArray(
-            result.detections
-        )
+        Array.isArray(result.detections)
             ? result.detections
             : [];
 
 
     const detectionList =
-        detections
-            .map(
-                detection => {
+        detections.length > 0
 
-                    const type =
-                        detection.type ||
-                        "sensitive information";
-
-                    return `
+            ? detections
+                .map(
+                    detection => `
                         <div>
-                            • ${escapeHtml(type)}
+                            • ${escapeHtml(
+                                detection.type
+                            )}
                         </div>
-                    `;
-                }
-            )
-            .join("");
+                    `
+                )
+                .join("")
+
+            : `
+                <div>
+                    • Sensitive information detected
+                </div>
+            `;
+
+
+    const redactedText =
+        result.redacted_text ||
+        "";
 
 
     overlay.innerHTML = `
@@ -891,34 +700,36 @@ function showWarning(
             </div>
 
             <div class="shadowshield-risk">
-
                 Risk Level:
                 <strong>
                     ${escapeHtml(
                         result.risk_level ||
-                        "SENSITIVE"
+                        "UNKNOWN"
                     )}
                 </strong>
+            </div>
 
-                <br>
-
+            <div class="shadowshield-risk">
                 Risk Score:
                 <strong>
                     ${escapeHtml(
-                        String(
-                            result.risk_score ??
-                            "N/A"
-                        )
+                        result.risk_score ??
+                        "N/A"
                     )}
                 </strong>
+            </div>
 
+            <div class="shadowshield-risk">
+                Findings:
+                <strong>
+                    ${escapeHtml(
+                        result.total_findings ??
+                        detections.length
+                    )}
+                </strong>
             </div>
 
             <div class="shadowshield-detections">
-
-                <strong>
-                    Detected information:
-                </strong>
 
                 ${detectionList}
 
@@ -931,10 +742,11 @@ function showWarning(
                 </strong>
 
                 <div class="shadowshield-text">
+
                     ${escapeHtml(
-                        result.redacted_text ||
-                        ""
+                        redactedText
                     )}
+
                 </div>
 
             </div>
@@ -985,9 +797,9 @@ function showWarning(
     );
 
 
-    // --------------------------------------------------------
+    // ========================================================
     // REDACT & SEND
-    // --------------------------------------------------------
+    // ========================================================
 
     document
         .getElementById(
@@ -1000,56 +812,44 @@ function showWarning(
                 event.preventDefault();
                 event.stopPropagation();
 
-
                 console.log(
                     "ShadowShield: Redact & Send clicked."
                 );
 
 
-                const replacement =
-                    result.redacted_text ||
-                    "";
-
-
                 const replaced =
                     replaceEditorText(
                         editor,
-                        replacement
+                        redactedText
                     );
 
 
                 if (!replaced) {
 
                     console.error(
-                        "ShadowShield: Could not replace editor."
+                        "ShadowShield: Could not update editor."
                     );
 
                     return;
                 }
 
 
-                // Clear the captured original
-                // so it cannot be reused accidentally.
-                lastPastedText = "";
-                lastPastedTime = 0;
-
-
                 removeWarning();
 
 
-                setTimeout(
-                    () => {
-                        clickPlatformSend();
-                    },
-                    500
-                );
+                setTimeout(() => {
+
+                    clickApprovedSend();
+
+                }, 500);
+
             }
         );
 
 
-    // --------------------------------------------------------
+    // ========================================================
     // EDIT
-    // --------------------------------------------------------
+    // ========================================================
 
     document
         .getElementById(
@@ -1062,28 +862,30 @@ function showWarning(
                 event.preventDefault();
                 event.stopPropagation();
 
+                console.log(
+                    "ShadowShield: Edit clicked."
+                );
+
                 removeWarning();
 
-                setTimeout(
-                    () => {
+                setTimeout(() => {
 
-                        const currentEditor =
-                            findPromptBox();
+                    const currentEditor =
+                        findPromptBox();
 
-                        if (currentEditor) {
-                            currentEditor.focus();
-                        }
+                    if (currentEditor) {
+                        currentEditor.focus();
+                    }
 
-                    },
-                    100
-                );
+                }, 100);
+
             }
         );
 
 
-    // --------------------------------------------------------
+    // ========================================================
     // SEND ANYWAY
-    // --------------------------------------------------------
+    // ========================================================
 
     document
         .getElementById(
@@ -1096,32 +898,25 @@ function showWarning(
                 event.preventDefault();
                 event.stopPropagation();
 
-
                 console.log(
                     "ShadowShield: Send Anyway clicked."
                 );
 
-
-                lastPastedText = "";
-                lastPastedTime = 0;
-
-
                 removeWarning();
 
+                setTimeout(() => {
 
-                setTimeout(
-                    () => {
-                        clickPlatformSend();
-                    },
-                    200
-                );
+                    clickApprovedSend();
+
+                }, 200);
+
             }
         );
 
 
-    // --------------------------------------------------------
+    // ========================================================
     // CANCEL
-    // --------------------------------------------------------
+    // ========================================================
 
     document
         .getElementById(
@@ -1134,7 +929,12 @@ function showWarning(
                 event.preventDefault();
                 event.stopPropagation();
 
+                console.log(
+                    "ShadowShield: Cancel clicked."
+                );
+
                 removeWarning();
+
             }
         );
 }
@@ -1147,6 +947,11 @@ function showWarning(
 async function analyzeCurrentPrompt() {
 
     if (shadowShieldChecking) {
+
+        console.log(
+            "ShadowShield: Already checking a prompt."
+        );
+
         return;
     }
 
@@ -1166,45 +971,36 @@ async function analyzeCurrentPrompt() {
 
 
     const text =
-        getCurrentPrompt();
+        getCurrentPrompt(editor);
 
 
     if (!text) {
-
-        console.warn(
-            "ShadowShield: Empty prompt."
-        );
-
         return;
     }
 
 
-    shadowShieldChecking =
-        true;
+    shadowShieldChecking = true;
 
 
     console.log(
         "ShadowShield: Analyzing prompt..."
     );
 
-
     console.log(
         "ShadowShield: Prompt size:",
         {
             characters: text.length,
-            lines: text.split("\n").length
+            lines:
+                text.split(/\r?\n/).length
         }
     );
 
 
     const response =
-        await sendForAnalysis(
-            text
-        );
+        await sendForAnalysis(text);
 
 
-    shadowShieldChecking =
-        false;
+    shadowShieldChecking = false;
 
 
     if (
@@ -1226,14 +1022,14 @@ async function analyzeCurrentPrompt() {
 
 
     console.log(
-        "ShadowShield analysis:",
+        "ShadowShield: Analysis result:",
         result
     );
 
 
-    // --------------------------------------------------------
+    // ========================================================
     // SAFE
-    // --------------------------------------------------------
+    // ========================================================
 
     if (
         result.risk_level === "SAFE"
@@ -1243,18 +1039,15 @@ async function analyzeCurrentPrompt() {
             "ShadowShield: SAFE → allowing submission."
         );
 
-        lastPastedText = "";
-        lastPastedTime = 0;
-
-        clickPlatformSend();
+        clickApprovedSend();
 
         return;
     }
 
 
-    // --------------------------------------------------------
+    // ========================================================
     // SENSITIVE / HIGH RISK
-    // --------------------------------------------------------
+    // ========================================================
 
     showWarning(
         result,
@@ -1264,7 +1057,7 @@ async function analyzeCurrentPrompt() {
 
 
 // ============================================================
-// KEYBOARD INTERCEPTION
+// ENTER KEY INTERCEPTION
 // ============================================================
 
 document.addEventListener(
@@ -1279,6 +1072,7 @@ document.addEventListener(
         }
 
 
+        // Ignore if a warning button is focused.
         if (
             event.target.closest &&
             event.target.closest(
@@ -1298,10 +1092,12 @@ document.addEventListener(
         }
 
 
+        // Only intercept when the active element
+        // is actually the prompt editor.
         if (
-            event.target !== editor &&
+            document.activeElement !== editor &&
             !editor.contains(
-                event.target
+                document.activeElement
             )
         ) {
             return;
@@ -1309,7 +1105,7 @@ document.addEventListener(
 
 
         const text =
-            getCurrentPrompt();
+            getCurrentPrompt(editor);
 
 
         if (!text) {
@@ -1318,8 +1114,7 @@ document.addEventListener(
 
 
         console.log(
-            "ShadowShield: Enter intercepted on",
-            getPlatform()
+            "ShadowShield: Enter intercepted."
         );
 
 
@@ -1343,19 +1138,19 @@ document.addEventListener(
     "click",
     event => {
 
-        // ----------------------------------------------------
-        // APPROVED SEND
-        // ----------------------------------------------------
-
+        // Allow a send that ShadowShield intentionally
+        // triggered after approval.
         if (allowNextSend) {
+
+            console.log(
+                "ShadowShield: Allowing approved send click."
+            );
+
             return;
         }
 
 
-        // ----------------------------------------------------
-        // IGNORE SHADOWSHIELD DIALOG
-        // ----------------------------------------------------
-
+        // Ignore ShadowShield's own warning buttons.
         if (
             event.target.closest &&
             event.target.closest(
@@ -1367,6 +1162,7 @@ document.addEventListener(
 
 
         const button =
+            event.target.closest &&
             event.target.closest(
                 "button"
             );
@@ -1389,41 +1185,19 @@ document.addEventListener(
             ).toLowerCase();
 
 
-        const title =
-            (
-                button.getAttribute(
-                    "title"
-                ) || ""
-            ).toLowerCase();
-
-
-        const text =
-            (
-                button.innerText ||
-                ""
-            ).trim().toLowerCase();
-
-
         const testId =
             button.getAttribute(
                 "data-testid"
             ) || "";
 
 
-        let isSendButton =
-            false;
+        let isSendButton = false;
 
 
-        // Claude
-        if (
-            platform === "claude" &&
-            label === "send message"
-        ) {
-            isSendButton = true;
-        }
+        // ----------------------------------------------------
+        // CHATGPT
+        // ----------------------------------------------------
 
-
-        // ChatGPT
         if (
             platform === "chatgpt" &&
             (
@@ -1435,21 +1209,45 @@ document.addEventListener(
         }
 
 
-        // Gemini
-        if (
-            platform === "gemini" ||
-            platform === "generic"
-        ) {
+        // ----------------------------------------------------
+        // GEMINI
+        // ----------------------------------------------------
 
-            if (
-                label.includes("send") ||
-                label.includes("submit") ||
-                title.includes("send") ||
-                title.includes("submit") ||
-                text === "send"
-            ) {
-                isSendButton = true;
-            }
+        if (
+            platform === "gemini" &&
+            (
+                label === "send message" ||
+                label.includes("send")
+            )
+        ) {
+            isSendButton = true;
+        }
+
+
+        // ----------------------------------------------------
+        // CLAUDE
+        // ----------------------------------------------------
+
+        if (
+            platform === "claude" &&
+            (
+                label === "send message" ||
+                label.includes("send")
+            )
+        ) {
+            isSendButton = true;
+        }
+
+
+        // Generic fallback
+        if (
+            !isSendButton &&
+            (
+                testId === "send-button" ||
+                label === "send message"
+            )
+        ) {
+            isSendButton = true;
         }
 
 
@@ -1463,32 +1261,21 @@ document.addEventListener(
 
 
         if (!editor) {
-
-            console.warn(
-                "ShadowShield: Prompt editor not found."
-            );
-
             return;
         }
 
 
-        const promptText =
-            getCurrentPrompt();
+        const text =
+            getCurrentPrompt(editor);
 
 
-        if (!promptText) {
-
-            console.warn(
-                "ShadowShield: Prompt text empty."
-            );
-
+        if (!text) {
             return;
         }
 
 
         console.log(
-            "ShadowShield: Send button intercepted on",
-            platform
+            "ShadowShield: Send button intercepted."
         );
 
 
@@ -1505,10 +1292,10 @@ document.addEventListener(
 
 
 // ============================================================
-// STATUS
+// PAGE LOAD MESSAGE
 // ============================================================
 
 console.log(
-    "ShadowShield platform:",
+    "ShadowShield: Platform =",
     getPlatform()
 );
